@@ -1,0 +1,74 @@
+
+*{
+    box-sizing: border-box;
+}
+
+#main{
+    background-color: #e3f5ff;
+    width: 90%;
+   margin: auto;
+}
+
+.Top_bar{
+    width: 90%;
+    height: 30px;
+    background-color: #00a3ff;
+    margin: auto;
+}
+
+#navbar{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    /* background-image: url('https://static.vecteezy.com/system/resources/previews/009/302/786/original/mountains-forest-background-texture-silhouette-of-coniferous-forest-tent-with-bonfire-hiking-concept-tourism-camping-with-wild-nature-season-trees-spruce-fir-horizontal-landscape-free-vector.jpg'); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    align-items: center;
+    margin-top: 1%;
+
+        /* background: transparent; */
+        background-color:#e3f5ff;
+    }
+    #navbar img{
+        width: 33%;
+        border-radius: 30%;
+        margin: auto;
+        margin-left: 1%;
+    }
+    #navOptions{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        font-size: large;
+        margin: 1%;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    transition: text-decoration ;
+    }
+    a:hover {
+        text-decoration: underline;
+        color: blue;
+    }
+
+    /* Content to lander page */
+ 
+    #content_data{
+        display: flex;
+        width: 90%;
+        margin: auto;
+        justify-content: space-between;
+    }
+    #content_img{
+        display: flex;
+    }
+    #content_img>img{
+        height: 100%;
+    }
+    #content_img_2{
+        margin-top: 20%;
+        margin-right: 20%;
+    }
