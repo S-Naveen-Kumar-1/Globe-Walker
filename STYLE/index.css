@@ -181,3 +181,40 @@ a:hover {
     margin: auto;
     width: 100%;
 }
+
+/* cards popular destinations */
+
+#popularDestination{
+    text-align: center;
+    margin-top: 5%;
+}
+
+#destinationDiv{
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+#destinationDiv>div{
+    border: 1px solid rgb(239, 215, 215);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 50%;
+    border: 1px solid black;
+}
+#destinationDiv>div>img{
+    width: 80%;
+    height: 60%;
+}
+#destinationDiv>div>div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+#destinationDiv>div>div>button{
+
+width: 40%;
+height: 50%;
+}
