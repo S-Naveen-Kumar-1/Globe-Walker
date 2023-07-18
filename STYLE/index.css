@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+}
+
+#main {
+    background-color: #e3f5ff;
+    width: 90%;
+    margin: auto;
+    /* background-image: url('https://static.vecteezy.com/system/resources/previews/009/302/786/original/mountains-forest-background-texture-silhouette-of-coniferous-forest-tent-with-bonfire-hiking-concept-tourism-camping-with-wild-nature-season-trees-spruce-fir-horizontal-landscape-free-vector.jpg'); */
+
+}
+
+
+.Top_bar {
+    width: 90%;
+    height: 30px;
+    background-color: #00a3ff;
+    margin: auto;
+}
+
+#navbar {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    align-items: center;
+    margin-top: 1%;
+
+    /* background: transparent; */
+    background-color: #e3f5ff;
+}
+
+#navbar img {
+    width: 33%;
+    border-radius: 30%;
+    margin: auto;
+    margin-left: 1%;
+}
+
+#navOptions {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+    margin: 1%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: text-decoration;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+/* Content to lander page */
+
+#content_data {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 4%;
+    
+}
+
+#content_img {
+    margin-left: 5%;
+    display: flex;
+    border-radius: 10%;
+
+}
+
+#contentInfo{
+    margin-top: -5%;
+}
+#content_img>img:nth-child(1) {
+    height: 100%;
+    width: 50%;
+    border-radius: 45%;
+    border: 5px solid #dbdedf;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    ;
+
+}
+
+#content_img>img:nth-child(2) {
+    height: 90%;
+    width: 50%;
+    margin-right: 10%;
+    margin-top: 20%;
+    border-radius: 45%;
+    border: 5px solid #dbdedf;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    ;
+}
+
+#content_btn {
+    border-radius: 10%;
+    background-color: #00d8f2;
+    color: white;
+    width: 30%;
+    height: 15%;
+    font-size: large;
+    margin-top: 1%;
+}
+
+#content_btn:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+
+#searchBar {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 10%;
+    align-items: center;
+    height: 50px;
+}
+
+#search {
+    width: 80%;
+    margin: auto;
+    height: 100%;
+}
+
+#desc {
+    text-align: center;
+}
+
+#description {
+    text-align: center;
+}
+
+/* midDiv part */
+#midDiv {
+    width: 90%;
+    margin: auto;
+    background-color: white;
+}
+
+/* Three cards */
+
+#threeCards {
+    display: flex;
+    text-align: center;
+    gap: 5%;
+    width: 80%;
+    margin: auto;  
+    margin-top: 5%; 
+}
+#threeCards>div>img {
+   height: 30%;
+   width: 30%;
+   margin-top: 5%;
+    
+}
+#threeCards>div{
+    width: 80%;
+    border-radius: 10%;
+    border: 1px solid rgb(168, 164, 164);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+/* world map info */
+
+#worldMapInfo{
+    margin-top: 10%;
+    text-align: center;
+}
+#worldImg>img{
+    margin: auto;
+    width: 100%;
+}
