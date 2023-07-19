@@ -13,6 +13,7 @@
 
 .Top_bar {
     width: 100%;
+
     height: 30px;
     background-color: #00a3ff;
     margin: auto;
@@ -75,27 +76,34 @@ a:hover {
     margin-left: 5%;
     display: flex;
     border-radius: 10%;
+
  width: 25%;
+
 }
 
 #contentInfo{
     margin-top: -5%;
+
     font-style: italic;
     font-size: 18px;
 }
 #contentInfo>h3{
 margin-top: 7%;
+
 }
 #content_img>img:nth-child(1) {
     height: 100%;
     width: 50%;
+
     /* border-radius: 49%; */
     border: 5px solid #dbdedf;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
+
 }
 
 #content_img>img:nth-child(2) {
+
     height: 100%;
     width: 50%;
     /* margin-right: 10%; */
@@ -119,6 +127,7 @@ margin-top: 7%;
 
 #content_btn:hover {
     color: rgb(244, 48, 58);
+
     cursor: pointer;
 }
 
@@ -129,8 +138,9 @@ margin-top: 7%;
     margin: auto;
     margin-top: 10%;
     align-items: center;
-    height: 50px; 
-    }
+    height: 50px;
+}
+
 
 #search {
     width: 80%;
@@ -153,9 +163,11 @@ margin-top: 7%;
     background-color: white;
 }
 
+
 /* #desc{
     margin-top: 5%;
 } */
+
 
 /* Three cards */
 
@@ -180,9 +192,11 @@ margin-top: 7%;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
 }
+
 #threeCards>div:hover{
     transform: translateY(-3px);
 }
+
 /* world map info */
 
 #worldMapInfo{
@@ -208,6 +222,7 @@ margin-top: 7%;
     text-align: center;
     width: 90%;
     margin: auto;
+
    
 }
 #destinationDiv :hover{
@@ -227,6 +242,7 @@ margin-top: 7%;
     width: 89%;
     height: 200px;
     border-radius: 5%;
+
 }
 #destinationDiv>div>div{
     display: flex;
@@ -235,6 +251,7 @@ margin-top: 7%;
 
 }
 #destinationDiv>div>div>button{
+
 width: 25%;
 height: 50%;
 background-color: white;
@@ -301,4 +318,5 @@ border-radius: 10%;
     cursor: pointer;
     color: white;
     background-color: #00d8f2;
+
 }
