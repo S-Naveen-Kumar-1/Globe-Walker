@@ -68,23 +68,25 @@ a:hover {
     margin: auto;
     justify-content: space-between;
     margin-top: 4%;
-    
+
 }
 
 #content_img {
     margin-left: 5%;
     display: flex;
     border-radius: 10%;
+    border: 1px solid black;
 
 }
 
-#contentInfo{
+#contentInfo {
     margin-top: -5%;
 }
+
 #content_img>img:nth-child(1) {
     height: 100%;
     width: 50%;
-    border-radius: 45%;
+    border-radius: 25%;
     border: 5px solid #dbdedf;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     ;
@@ -96,18 +98,18 @@ a:hover {
     width: 50%;
     margin-right: 10%;
     margin-top: 20%;
-    border-radius: 45%;
+    border-radius: 25%;
     border: 5px solid #dbdedf;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     ;
 }
 
 #content_btn {
-    border-radius: 10%;
+    border-radius: 20%;
     background-color: #00d8f2;
     color: white;
-    width: 30%;
-    height: 15%;
+    width: 25%;
+    height: 11%;
     font-size: large;
     margin-top: 1%;
 }
@@ -155,41 +157,45 @@ a:hover {
     text-align: center;
     gap: 5%;
     width: 80%;
-    margin: auto;  
-    margin-top: 5%; 
+    margin: auto;
+    margin-top: 5%;
 }
+
 #threeCards>div>img {
-   height: 30%;
-   width: 30%;
-   margin-top: 5%;
-    
+    height: 30%;
+    width: 30%;
+    margin-top: 5%;
+
 }
-#threeCards>div{
+
+#threeCards>div {
     width: 80%;
     border-radius: 10%;
     border: 1px solid rgb(168, 164, 164);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
 }
+
 /* world map info */
 
-#worldMapInfo{
+#worldMapInfo {
     margin-top: 10%;
     text-align: center;
 }
-#worldImg>img{
+
+#worldImg>img {
     margin: auto;
     width: 100%;
 }
 
 /* cards popular destinations */
 
-#popularDestination{
+#popularDestination {
     text-align: center;
     margin-top: 5%;
 }
 
-#destinationDiv{
+#destinationDiv {
     display: flex;
     justify-content: center;
     gap: 1%;
@@ -197,24 +203,56 @@ a:hover {
     width: 90%;
     margin: auto;
 }
-#destinationDiv>div{
+
+#destinationDiv>div {
     border: 1px solid rgb(239, 215, 215);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     width: 50%;
     border: 1px solid black;
 }
-#destinationDiv>div>img{
+
+#destinationDiv>div>img {
     width: 80%;
     height: 60%;
 }
-#destinationDiv>div>div{
+
+#destinationDiv>div>div {
     display: flex;
     justify-content: space-around;
     align-items: center;
 
 }
-#destinationDiv>div>div>button{
 
-width: 40%;
-height: 50%;
+#destinationDiv>div>div>button {
+
+    width: 40%;
+    height: 50%;
+}
+
+#form {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    /* border: 1px solid black; */
+    text-align: center;
+}
+
+#details {
+    display: flex;
+    width: 100%;
+}
+
+#message {
+    width: 100%;
+}
+
+#getInTouch {
+    text-align: center;
+    margin: auto;
+    width: 90%;
+}
+
+#footer {
+    display: flex;
 }
