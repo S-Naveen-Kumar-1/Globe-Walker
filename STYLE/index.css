@@ -3,10 +3,10 @@
 }
 
 #main {
-    background-color: #e3f5ff;
-    width: 90%;
+    background-color: #def3ff;
+    /* background-image: url(""); */
+    width: 100%;
     margin: auto;
-    /* background-image: url('https://static.vecteezy.com/system/resources/previews/009/302/786/original/mountains-forest-background-texture-silhouette-of-coniferous-forest-tent-with-bonfire-hiking-concept-tourism-camping-with-wild-nature-season-trees-spruce-fir-horizontal-landscape-free-vector.jpg'); */
 
 }
 
@@ -93,11 +93,11 @@ margin-top: 7%;
 }
 #content_img>img:nth-child(1) {
     height: 100%;
-    width: 50%;
+    width: 100%;
 
     /* border-radius: 49%; */
-    border: 5px solid #dbdedf;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    /* border: 5px solid #dbdedf; */
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
 
 
 }
@@ -310,13 +310,23 @@ border-radius: 10%;
     font-size: 20px;
 }
 #form-btn>button{
-    width: 30%;
-    height: 120%;
-    
+    width: 25%;
+    margin: 2%;
+    padding: 1%;
+    border-radius: 10%;
 }
 #form-btn>button:hover{
     cursor: pointer;
     color: white;
-    background-color: #00d8f2;
+    background-color:black;
 
+}
+
+/* footer */
+
+#footer {
+    /* width: 90%; */
+    margin: auto;
+    display: flex;
+    margin-top: 10%;
 }
