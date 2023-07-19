@@ -12,7 +12,8 @@
 
 
 .Top_bar {
-    width: 90%;
+    width: 100%;
+
     height: 30px;
     background-color: #00a3ff;
     margin: auto;
@@ -76,44 +77,57 @@ a:hover {
     display: flex;
     border-radius: 10%;
 
+ width: 25%;
+
 }
 
 #contentInfo{
     margin-top: -5%;
+
+    font-style: italic;
+    font-size: 18px;
+}
+#contentInfo>h3{
+margin-top: 7%;
+
 }
 #content_img>img:nth-child(1) {
     height: 100%;
     width: 50%;
-    border-radius: 45%;
+
+    /* border-radius: 49%; */
     border: 5px solid #dbdedf;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    ;
+
 
 }
 
 #content_img>img:nth-child(2) {
-    height: 90%;
+
+    height: 100%;
     width: 50%;
-    margin-right: 10%;
+    /* margin-right: 10%; */
     margin-top: 20%;
-    border-radius: 45%;
+    /* border-radius: 49%; */
     border: 5px solid #dbdedf;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    ;
+    
 }
 
 #content_btn {
-    border-radius: 10%;
+    border-radius: 5%;
     background-color: #00d8f2;
     color: white;
-    width: 30%;
-    height: 15%;
-    font-size: large;
-    margin-top: 1%;
+    width: 18%;
+    height: 8%;
+    font-size: 15px;
+    margin-top: 4%;
+    cursor: pointer;
 }
 
 #content_btn:hover {
-    color: blue;
+    color: rgb(244, 48, 58);
+
     cursor: pointer;
 }
 
@@ -126,6 +140,7 @@ a:hover {
     align-items: center;
     height: 50px;
 }
+
 
 #search {
     width: 80%;
@@ -147,6 +162,12 @@ a:hover {
     margin: auto;
     background-color: white;
 }
+
+
+/* #desc{
+    margin-top: 5%;
+} */
+
 
 /* Three cards */
 
@@ -171,6 +192,11 @@ a:hover {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
 }
+
+#threeCards>div:hover{
+    transform: translateY(-3px);
+}
+
 /* world map info */
 
 #worldMapInfo{
@@ -196,16 +222,27 @@ a:hover {
     text-align: center;
     width: 90%;
     margin: auto;
+
+   
+}
+#destinationDiv :hover{
+    transform: translateY(-2px);
 }
 #destinationDiv>div{
     border: 1px solid rgb(239, 215, 215);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    width: 50%;
-    border: 1px solid black;
+    box-shadow: rgba(70, 64, 64, 0.35) 0px 5px 15px;
+    width: 30%;
+    margin :auto;
+    border-radius: 5%;
+    height: auto;  
 }
+
 #destinationDiv>div>img{
-    width: 80%;
-    height: 60%;
+    margin-top: 2%;
+    width: 89%;
+    height: 200px;
+    border-radius: 5%;
+
 }
 #destinationDiv>div>div{
     display: flex;
@@ -215,6 +252,71 @@ a:hover {
 }
 #destinationDiv>div>div>button{
 
-width: 40%;
+width: 25%;
 height: 50%;
+background-color: white;
+color: #17628e;
+font-size: 16px;
+border-radius: 10%;
+}
+#destinationDiv>div>div>button:hover{
+    cursor: pointer;
+    background-color: #00d8f2;
+    color: white;
+}
+
+/* mountain */
+#mountain{
+   margin-top: 5%;
+
+}
+#mountain>img{
+    width: 99%;
+    display: flex;
+    margin: auto;
+    height: 400px;
+}
+
+/* get in touch */
+#getInTouch{
+    text-align: center;
+    margin: auto;
+    width: 90%;
+}
+#form{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    /* border: 1px solid black; */
+    text-align: center;
+    
+}
+#details{
+    display: flex;
+    width: 90%;
+    gap: 2%;
+}
+#name{
+    font-size: 20px;
+    
+}
+#email{
+    font-size: 20px;
+   
+}
+#message{
+    width: 102%;
+    font-size: 20px;
+}
+#form-btn>button{
+    width: 30%;
+    height: 120%;
+    
+}
+#form-btn>button:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #00d8f2;
+
 }
