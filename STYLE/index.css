@@ -22,6 +22,7 @@
 #navbar {
     width: 90%;
     display: flex;
+    /* position: fixed; */
     justify-content: space-between;
     margin: auto;
     background-repeat: no-repeat;
