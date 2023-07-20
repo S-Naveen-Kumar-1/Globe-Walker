@@ -1,5 +1,6 @@
 let container = document.getElementById("container");
 
+let holidayArr= JSON.parse(localStorage.getItem("cartData"))||[]
 
 //Moe Info selectores
 let leftArrow= document.querySelector(".leftArrow");
@@ -43,7 +44,7 @@ displayPopularPlaces(arr)
 function displayPopularPlaces(data){
 
     for(let i=0;i<2;i++){
-     
+     container.innerHTML=null;
          let card=document.createElement("div");
              let image=document.createElement("img");
              let tripStartDate=document.createElement("h5");
@@ -57,6 +58,24 @@ function displayPopularPlaces(data){
              let days=document.createElement("p");
              let enquiry=document.createElement("button");
              let addCartBtn=document.createElement("button");
+
+            //  adding to local storage
+             addCartBtn.addEventListener("click",function(){
+                let flag=true;
+                for(let j=0;j<holidayArr.length;j++){
+                    if(holidayArr[j].id==data[i].id){
+                      flag = false
+                         alert("Package Already in Cart Page, Please Go to Cart Page")
+                    }
+                }
+                if(flag){
+                  data[i].quantity=1;
+                  holidayArr.push(data[i])
+                  localStorage.setItem("cartData",JSON.stringify(holidayArr))
+                  alert ("Package added to Cart")
+                }
+            })
+
              let country=document.createElement("h3");
                  country.innerText=data[i].country;
 
