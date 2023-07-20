@@ -1,8 +1,10 @@
 let container = document.getElementById("container");
 
+
 // storing data to LS 
 let hotelArr= JSON.parse(localStorage.getItem("cartData"))||[]
-
+let paymentArr= JSON.parse(localStorage.getItem("paymentData"))||[]
+displayHotelPlaces(hotelArr)
 //Moe Info selectores
 let leftArrow= document.querySelector(".leftArrow");
 let rightArrow= document.querySelector(".rightArrow");
@@ -11,18 +13,7 @@ let LcoationDescription= document.querySelector(".LcoationDescription");
 let LcoationDescriptionDiv=document.querySelector(".LcoationDescriptionDiv");
 let MoreInfoCloseBtn = document.querySelector(".close");
 
-async function getdata(){
-    try{
-        let res = await fetch("./DATA/hotel.json");
-        let data = await res.json();
-          console.log(data)
-          displayHotelPlaces(data)
-    }
-    catch(err){
-        console.log(err)
-    }
-}
-getdata()
+
 
 
 function displayHotelPlaces(data){
@@ -37,7 +28,7 @@ function displayHotelPlaces(data){
              let price=document.createElement("h5");
              let location=document.createElement("h3");
              let card2=document.createElement("div");
-             let card3=document.createElement("div");
+            //  let card3=document.createElement("div");
              let rating=document.createElement("h4");
              let stars=document.createElement("div");
             //  let days=document.createElement("p");
@@ -49,19 +40,12 @@ function displayHotelPlaces(data){
                 //  adding card to ls and later will append to cart page
           
                  addCartBtn.addEventListener("click",function(){
-                  let flag=true;
-                  for(let j=0;j<hotelArr.length;j++){
-                      if(hotelArr[j].id==data[i].id){
-                        flag = false
-                           alert("Package Already in Cart Page, Please Go to Cart Page")
-                      }
-                  }
-                  if(flag){
+                 
                     data[i].quantity=1;
-                    hotelArr.push(data[i])
-                    localStorage.setItem("cartData",JSON.stringify(hotelArr))
-                    alert ("Package added to Cart")
-                  }
+                    paymentArr.push(data[i])
+                    localStorage.setItem("paymentData",JSON.stringify(paymentArr))
+                    alert ("Package added to Payment Page")
+                  
               })
 
              let card4=document.createElement("div");
@@ -100,10 +84,10 @@ function displayHotelPlaces(data){
                  stars.append(span);
              }
             
-             enquiry.innerText="Send Enquiry";
+             enquiry.innerText="DELETE";
              enquiry.setAttribute("class","enquiryBtn");
 
-             addCartBtn.innerText="Add to cart";
+             addCartBtn.innerText="Buy Now";
              addCartBtn.setAttribute("class","addCartBtn");
 
              card2.append(rating,stars);
@@ -115,9 +99,16 @@ function displayHotelPlaces(data){
              container.append(card);
      
  
-             enquiry.addEventListener("click",()=>{
-                 enquiry_openForm();
-             })
+                enquiry.addEventListener("click",function(){
+                    console.log("hi")
+                    hotelArr=hotelArr.filter(function(el){
+                        return el.id != data[i].id
+                      })
+
+                      localStorage.setItem("cartData",JSON.stringify(hotelArr))
+                      displayHotelPlaces(hotelArr)
+                    })
+
 
              moreInfo.addEventListener("click",()=>{
                 moreInfo_openForm();
