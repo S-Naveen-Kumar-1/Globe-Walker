@@ -10,7 +10,9 @@
 
 }
 
-
+body{
+    margin: 0%;
+}
 .Top_bar {
     width: 100%;
 
@@ -20,7 +22,7 @@
 }
 
 #navbar {
-    width: 90%;
+    width: 100%;
     display: flex;
     /* position: fixed; */
     justify-content: space-between;
@@ -29,10 +31,10 @@
     background-attachment: fixed;
     background-size: cover;
     align-items: center;
-    margin-top: 1%;
-
+      position: sticky;
+      top: 0%;
     /* background: transparent; */
-    background-color: #e3f5ff;
+    background-color: white;
 }
 
 #navbar img {
