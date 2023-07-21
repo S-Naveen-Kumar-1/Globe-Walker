@@ -7,6 +7,7 @@ let linkedIn = document.querySelector(".linkedInImg");
 let insta = document.querySelector(".instaImg");
 let youTube = document.querySelector(".youTubeImg");
 
+
 //code for div Above navBar
 twitter.addEventListener("click",()=>{
   window.open("https://twitter.com/");
@@ -25,7 +26,14 @@ youTube.addEventListener("click",()=>{
 });
 
 // storing data to LS 
-let hotelArr= JSON.parse(localStorage.getItem("cartData"))||[]
+let hotelArr= JSON.parse(localStorage.getItem("cartData"))||[];
+
+//selectores for middle div
+let search = document.getElementById("searchBar");
+
+//selectors for filter
+let byRating = document.getElementById("byRating");
+let byPrice = document.getElementById("byPrice");
 
 //Moe Info selectores
 let leftArrow= document.querySelector(".leftArrow");
@@ -35,12 +43,13 @@ let LcoationDescription= document.querySelector(".LcoationDescription");
 let LcoationDescriptionDiv=document.querySelector(".LcoationDescriptionDiv");
 let MoreInfoCloseBtn = document.querySelector(".close");
 
+// let arr = [];
 async function getdata(){
     try{
         let res = await fetch("./DATA/hotel.json");
         let data = await res.json();
-          console.log(data)
           displayHotelPlaces(data)
+          fil(data);
     }
     catch(err){
         console.log(err)
@@ -51,7 +60,7 @@ getdata()
 
 function displayHotelPlaces(data){
   // console.log(data)
-
+     container.innerHTML="";
     for(let i=0;i<data.length;i++){
      
          let card=document.createElement("div");
@@ -179,3 +188,54 @@ function displayHotelPlaces(data){
     MoreInfoCloseBtn.addEventListener("click",()=>{
         moreInfo_closeForm();
     })
+
+ function fil(arr){
+     //filter part for Search input
+     search.addEventListener("input",function(){
+      let searched=arr.filter(function(e){
+          if(e.location.toUpperCase().includes(search.value.toUpperCase())===true || e.country.toUpperCase().includes(search.value.toUpperCase())===true){
+              return e
+          } 
+      })
+      displayHotelPlaces(searched);
+  })
+
+   //filter part for rating
+  byRating.addEventListener("change",function(){
+
+      let rate=arr.filter(function(e){
+         if(e.rating==byRating.value){
+          return e;
+         }
+      })
+
+      displayHotelPlaces(rate);
+      })
+
+   //filter part for price
+      byPrice.addEventListener("change",function(){
+
+          if(byPrice.value=="LTH"){
+          
+          let low=arr.sort(function(a,b){
+
+              return Number(a.price)-Number(b.price);
+          })
+           console.log(low)
+          displayHotelPlaces(low);
+      }
+      else if(byPrice.value==="HTL"){
+          let high=arr.sort(function(a,b){
+              return Number(b.price)-Number(a.price);
+          })
+
+          displayHotelPlaces(high);
+                  
+      }
+      else{
+         console.log(arr);
+         console.log(byPrice.value=="")
+            displayHotelPlaces(arr);
+         }   })
+              
+            }
