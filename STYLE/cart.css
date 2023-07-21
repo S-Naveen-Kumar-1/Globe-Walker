@@ -1,11 +1,11 @@
 *{
     box-sizing: border-box;
 }
-body{
-  margin: 0%;
-}
 .checked {
     color: orange;
+}
+body{
+  margin: 0%;
 }
 
 /* for Above navBar div*/
@@ -34,7 +34,7 @@ margin-left: 30px;
 .AboveNavBarDiv1>div:nth-child(3)>img{
    width: 17px;
  }
- 
+
 .AboveNavBarDiv1>div:nth-child(2)>img{
   width: 17px;
  } 
@@ -58,16 +58,10 @@ margin-left: 30px;
     background-color: white;
     border-radius: 40px;
   }
-  .AboveNavBarDiv2>img:hover{
-cursor: pointer;
-transform: translateY(-3px);
-
-  }
 
   /* for Header part which consist Navbar */
   #header{
-    background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(../IMAGES/bg-hero.jpg);
-    height: 590px;
+    background: linear-gradient(rgba(231, 231, 247, 0.7), rgba(169, 169, 183, 0.7)), url("");
     background-size: cover; 
   }
 
@@ -103,14 +97,14 @@ transform: translateY(-3px);
     text-decoration: none;
   }
   #navOptions>a:nth-child(4){
-    color: #a1e117;
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
+    color: white;
+    text-decoration: none;
   }
 
   #navOptions>a:nth-child(5){
-    color: white;
-    text-decoration: none;
+    color: #a1e117;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
   }
   
   #navOptions>a:nth-child(6){
@@ -148,41 +142,11 @@ text-decoration: none;
   height: 1px;
   border: 0px;
 }
-
-  /* #log >img{
-     width: 90px;
-     margin-top: 30px;
-     margin-left: 60px;
-  } */
-
    #log {
     margin-left: 70px;
       color: #86B817;
       font-weight: bolder;
       font-size: 40px
-  }
-
-#tripDate{
-    margin-top: 5px;
-    margin: auto;
-    /* border: 1px solid green; */
-    width: fit-content;
-}
-
-#day_rating{
-    display: flex;
-    text-align: center;
-    align-items: center;
-    gap: 20px;
-    justify-content: space-between;
-    
-  }
-  #rating{
-      display: flex;
-      text-align: center;
-      align-items: center;
-      gap: 10px;
-      margin-right: 20px;
   }
 
   #container{
@@ -213,16 +177,6 @@ text-decoration: none;
     border-top-left-radius: 20px;    
 }
 
-#day_rating{
-    display: flex;
-    text-align: center;
-    align-items: center;
-    gap: 20px;
-    justify-content: space-between;
-    margin-top: -15px;
-    
-  }
-
   #rating{
     display: flex;
     text-align: center;
@@ -241,7 +195,7 @@ text-decoration: none;
 }
 
 #container .location{
-    background-color: lawngreen;
+    background-color: rgb(113, 140, 86);
     width:fit-content;
     margin: auto;
     margin-top: -10px;
@@ -298,30 +252,11 @@ text-decoration: none;
     padding: 0px;
 }
 
-.seats_Available{
-    margin: 0px;
-    margin-top: 5px;
-    margin-left: 10px;
-    padding: 0px;
-}
-
-.tripStartDate{
-    margin: 0px;
-    margin-top: 5px;
-    padding: 0px;
-}
 .price{
     margin: 0px;
     margin-top: 5px;
     padding: 0px;
 }
-
-.middleDiv{
-    display: flex;
-    gap: 30px;
-}
-
-
 
 /* More Info popup */
 .moreInfoPopup{
