@@ -18,7 +18,7 @@ let MoreInfoCloseBtn = document.querySelector(".close");
 
 function displayHotelPlaces(data){
   // console.log(data)
-
+  container.innerHTML="";
     for(let i=0;i<data.length;i++){
      
          let card=document.createElement("div");

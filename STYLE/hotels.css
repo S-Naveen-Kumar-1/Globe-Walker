@@ -196,7 +196,7 @@ text-decoration: none;
 }
 
 #container .location{
-    background-color: lawngreen;
+    color: #74ae36;
     width:fit-content;
     margin: auto;
     margin-top: -10px;
@@ -204,13 +204,13 @@ text-decoration: none;
 }
 
 #container .enquiry_ToCartDiv > .enquiryBtn{
-    border: 1px solid orange;
+    border: 1px solid #6bd5b9;
     width: 100px;
     height: 30px;
     border-radius: 10px;
-    color:darkmagenta;
+    color:rgb(16, 2, 16);
     font-weight: bold;
-    background-color: #FFA41C;
+    background-color: #eaf5f2;
     cursor: pointer;
     margin-bottom: 0px;
     margin-top: 10px;
@@ -218,13 +218,13 @@ text-decoration: none;
 }
 
 #container .enquiry_ToCartDiv > .addCartBtn{
-    border: 1px solid orange;
+    border: 1px solid #6bd5b9;
     width: 100px;
     height: 30px;
     border-radius: 10px;
-    color: darkmagenta;
+    color: rgb(16, 1, 16);
     font-weight: bold;
-    background-color: #FFD814;
+    background-color: #eaf5f2;
     cursor: pointer;
     margin-bottom: 0px;
     margin-top: 10px;
@@ -247,7 +247,7 @@ text-decoration: none;
 
 .moreInfo{
     text-decoration: underline;
-    color: blue;
+    color: rgb(242, 65, 68);
     margin: 0px;
     margin-top: 5px;
     padding: 0px;
