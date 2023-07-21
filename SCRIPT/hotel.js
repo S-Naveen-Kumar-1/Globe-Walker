@@ -32,15 +32,12 @@ function displayHotelPlaces(data){
      
          let card=document.createElement("div");
              let image=document.createElement("img");
-            //  let tripStartDate=document.createElement("h5");
-            //  let seats_Available=document.createElement("h5");
              let price=document.createElement("h5");
              let location=document.createElement("h3");
              let card2=document.createElement("div");
              let card3=document.createElement("div");
              let rating=document.createElement("h4");
              let stars=document.createElement("div");
-            //  let days=document.createElement("p");
              let enquiry=document.createElement("button");
              let addCartBtn=document.createElement("button");
              let country=document.createElement("h3");
@@ -66,21 +63,11 @@ function displayHotelPlaces(data){
 
              let card4=document.createElement("div");
                  card4.setAttribute("class","enquiry_ToCartDiv");
-
-            //  let card5 =document.createElement("div");
-            //      card5.setAttribute("class","middleDiv");
-            //      card5.append(price);  
                    
              let moreInfo = document.createElement("h5");
                  moreInfo.innerText="More Info";
                  moreInfo.setAttribute("class","moreInfo");   
                  
-            // tripStartDate.innerText="Trip Start Date: "+data[i].startDate;
-            // tripStartDate.setAttribute("class","tripStartDate");
- 
-            // seats_Available.innerText="Seats Available: "+data[i].seatsAvailable;
-            // seats_Available.setAttribute("class","seats_Available");
-           
             price.innerText="Price: Rs."+data[i].price+"/Person";
             price.setAttribute("class","price");
              
@@ -88,7 +75,6 @@ function displayHotelPlaces(data){
              location.innerText=data[i].location+", "+data[i].country;
              location.setAttribute("class","location");
              rating.innerText=data[i].rating;
-            //  days.innerText=data[i].day;
              for(let j=1;j<=5;j++){
                  let span=document.createElement("span");
                  if(j<=Number(data[i].rating)){
@@ -107,10 +93,8 @@ function displayHotelPlaces(data){
              addCartBtn.setAttribute("class","addCartBtn");
 
              card2.append(rating,stars);
-            //  card3.append(days,card2);
              card4.append(enquiry,addCartBtn);
              card2.id="rating";
-            //  card3.id="day_rating";
              card.append(image,card2,location,price,moreInfo,card4);
              container.append(card);
      
@@ -166,7 +150,7 @@ function displayHotelPlaces(data){
        moreInfo_Sliding_Image.src=array[i];
        })
     }
-
+ 
 
     MoreInfoCloseBtn.addEventListener("click",()=>{
         moreInfo_closeForm();
