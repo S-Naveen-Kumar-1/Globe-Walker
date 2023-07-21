@@ -1,5 +1,28 @@
 let container = document.getElementById("container");
 
+//selectors for div above navBar
+let twitter = document.querySelector(".twitterImg");
+let facebook = document.querySelector(".facebookImg");
+let linkedIn = document.querySelector(".linkedInImg");
+let insta = document.querySelector(".instaImg");
+let youTube = document.querySelector(".youTubeImg");
+
+//code for div Above navBar
+twitter.addEventListener("click",()=>{
+  window.open("https://twitter.com/");
+});
+facebook.addEventListener("click",()=>{
+  window.open("https://facebook.com/");
+});
+linkedIn.addEventListener("click",()=>{
+  window.open("https://in.linkedin.com/");
+});
+insta.addEventListener("click",()=>{
+  window.open("https://www.instagram.com/");
+});
+youTube.addEventListener("click",()=>{
+  window.open("https://www.youtube.com/");
+});
 
 // storing data to LS 
 let hotelArr= JSON.parse(localStorage.getItem("cartData"))||[]
@@ -18,7 +41,10 @@ let MoreInfoCloseBtn = document.querySelector(".close");
 
 function displayHotelPlaces(data){
   // console.log(data)
-  container.innerHTML="";
+
+
+container.innerHTML=null
+
     for(let i=0;i<data.length;i++){
      
          let card=document.createElement("div");
