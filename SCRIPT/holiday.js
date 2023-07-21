@@ -1,6 +1,13 @@
+//selectors for div above navBar
+let twitter = document.querySelector(".twitterImg");
+let facebook = document.querySelector(".facebookImg");
+let linkedIn = document.querySelector(".linkedInImg");
+let insta = document.querySelector(".instaImg");
+let youTube = document.querySelector(".youTubeImg");
+
+
 let container = document.getElementById("container");
 
-let holidayArr= JSON.parse(localStorage.getItem("cartData"))||[]
 
 //Moe Info selectores
 let leftArrow= document.querySelector(".leftArrow");
@@ -9,6 +16,27 @@ let moreInfo_Sliding_Image = document.querySelector(".moreInfo_Sliding_Image");
 let LcoationDescription= document.querySelector(".LcoationDescription");
 let LcoationDescriptionDiv=document.querySelector(".LcoationDescriptionDiv");
 let MoreInfoCloseBtn = document.querySelector(".close");
+
+
+
+
+//code for div Above navBar
+twitter.addEventListener("click",()=>{
+    window.open("https://twitter.com/");
+});
+facebook.addEventListener("click",()=>{
+    window.open("https://facebook.com/");
+});
+linkedIn.addEventListener("click",()=>{
+    window.open("https://in.linkedin.com/");
+});
+insta.addEventListener("click",()=>{
+    window.open("https://www.instagram.com/");
+});
+youTube.addEventListener("click",()=>{
+    window.open("https://www.youtube.com/");
+});
+
 
 let arr = [ {
     id:"1",
@@ -44,7 +72,7 @@ displayPopularPlaces(arr)
 function displayPopularPlaces(data){
 
     for(let i=0;i<2;i++){
-     container.innerHTML=null;
+     
          let card=document.createElement("div");
              let image=document.createElement("img");
              let tripStartDate=document.createElement("h5");
@@ -58,24 +86,6 @@ function displayPopularPlaces(data){
              let days=document.createElement("p");
              let enquiry=document.createElement("button");
              let addCartBtn=document.createElement("button");
-
-            //  adding to local storage
-             addCartBtn.addEventListener("click",function(){
-                let flag=true;
-                for(let j=0;j<holidayArr.length;j++){
-                    if(holidayArr[j].id==data[i].id){
-                      flag = false
-                         alert("Package Already in Cart Page, Please Go to Cart Page")
-                    }
-                }
-                if(flag){
-                  data[i].quantity=1;
-                  holidayArr.push(data[i])
-                  localStorage.setItem("cartData",JSON.stringify(holidayArr))
-                  alert ("Package added to Cart")
-                }
-            })
-
              let country=document.createElement("h3");
                  country.innerText=data[i].country;
 
@@ -186,3 +196,8 @@ function displayPopularPlaces(data){
     MoreInfoCloseBtn.addEventListener("click",()=>{
         moreInfo_closeForm();
     })
+
+
+
+
+
