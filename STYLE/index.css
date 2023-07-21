@@ -186,9 +186,9 @@ body{
 
 #contentInfo{
     margin-top: -5%;
-
-    font-style: italic;
-    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font-style: italic; */
+    /* font-size: 18px; */
 }
 #contentInfo>h3{
 margin-top: 7%;
@@ -234,29 +234,15 @@ margin-top: 7%;
     cursor: pointer;
 }
 
-
-#searchBar {
-    display: flex;
-    width: 80%;
-    margin: auto;
-    margin-top: 10%;
-    align-items: center;
-    height: 50px;
-}
-
-
-#search {
-    width: 80%;
-    margin: auto;
-    height: 100%;
-}
-
 #desc {
     text-align: center;
+   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #description {
     text-align: center;
+    
 }
 
 /* midDiv part */
@@ -290,7 +276,7 @@ margin-top: 7%;
 }
 #threeCards>div{
     width: 80%;
-    border-radius: 10%;
+    border-radius: 10px;
     border: 1px solid rgb(168, 164, 164);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
@@ -305,6 +291,7 @@ margin-top: 7%;
 #worldMapInfo{
     margin-top: 10%;
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #worldImg>img{
     margin: auto;
@@ -315,7 +302,9 @@ margin-top: 7%;
 
 #popularDestination{
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 #destinationDiv{
@@ -325,7 +314,7 @@ margin-top: 7%;
     text-align: center;
     width: 90%;
     margin: auto;
-
+   /* border: 2px solid black; */
    
 }
 #destinationDiv :hover{
@@ -336,8 +325,8 @@ margin-top: 7%;
     box-shadow: rgba(70, 64, 64, 0.35) 0px 5px 15px;
     width: 30%;
     margin :auto;
-    border-radius: 5%;
-    height: auto;  
+    border-radius: 15px;
+    padding: 2%;
 }
 
 #destinationDiv>div>img{
@@ -360,11 +349,11 @@ height: 50%;
 background-color: white;
 color: #17628e;
 font-size: 16px;
-border-radius: 10%;
+border-radius: 10px;
 }
 #destinationDiv>div>div>button:hover{
     cursor: pointer;
-    background-color: #00d8f2;
+    background-color: #0d0d0d;
     color: white;
 }
 
@@ -384,7 +373,10 @@ border-radius: 10%;
 #getInTouch{
     text-align: center;
     margin: auto;
-    width: 90%;
+    width: 80%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 #form{
     width: 90%;
@@ -394,6 +386,8 @@ border-radius: 10%;
     /* border: 1px solid black; */
     text-align: center;
     
+    margin-bottom: 5%;
+    
 }
 #details{
     display: flex;
@@ -402,21 +396,23 @@ border-radius: 10%;
 }
 #name{
     font-size: 20px;
+    border-radius: 10px;
     
 }
 #email{
     font-size: 20px;
-   
+    border-radius: 10px;
 }
 #message{
     width: 102%;
     font-size: 20px;
+    border-radius: 10px;
 }
 #form-btn>button{
     width: 25%;
     margin: 2%;
     padding: 1%;
-    border-radius: 10%;
+    border-radius: 10px;
 }
 #form-btn>button:hover{
     cursor: pointer;
@@ -426,10 +422,14 @@ border-radius: 10%;
 }
 
 /* footer */
-
 #footer {
     /* width: 90%; */
-    margin: auto;
     display: flex;
-    margin-top: 10%;
+   background-color: #d8d5d8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* justify-content: center; */
+    justify-content: space-between;
+    /* margin: 20px 60px 30px 60px; */
+    margin: auto;
+    padding: 2%;
 }
