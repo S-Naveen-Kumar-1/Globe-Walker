@@ -67,6 +67,7 @@ function displayHotelPlaces(data){
              let image=document.createElement("img");
              let price=document.createElement("h5");
              let location=document.createElement("h3");
+             let title=document.createElement("h3");
              let card2=document.createElement("div");
              let card3=document.createElement("div");
              let rating=document.createElement("h4");
@@ -106,6 +107,7 @@ function displayHotelPlaces(data){
             price.setAttribute("class","price");
              
              image.src=data[i].image;
+             title.innerText=data[i].title;
              location.innerText=data[i].location+", "+data[i].country;
              location.setAttribute("class","location");
              rating.innerText=data[i].rating;
@@ -129,7 +131,7 @@ function displayHotelPlaces(data){
              card2.append(rating,stars);
              card4.append(enquiry,addCartBtn);
              card2.id="rating";
-             card.append(image,card2,location,price,moreInfo,card4);
+             card.append(image,card2,title,price,moreInfo,card4);
              container.append(card);
      
  
