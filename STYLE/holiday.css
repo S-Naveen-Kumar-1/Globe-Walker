@@ -161,6 +161,133 @@ text-decoration: none;
       font-size: 40px
   }
 
+  .middleText{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin: auto;
+    margin-top: 130px;
+
+  }
+
+  .middleText>h1{
+   margin-bottom: 0px;
+  }
+
+  .middleText>h4{
+    margin-bottom: 30px;
+    margin-top: 10px;
+   }
+
+   .Filter{
+    display: flex;
+    justify-content: space-between;
+   }
+   #byPrice{
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    margin-right: 15px;
+    margin-left: 35px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+   }
+
+   #byPrice:hover{
+    cursor: pointer;
+    background-color: rgb(191, 187, 187);;
+    color: black;
+   }
+
+   #byRating{
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 0px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+   }
+   #byRating:hover{
+    cursor: pointer;
+    background-color: rgb(191, 187, 187);;
+    color: black;
+   }
+
+   .dateDiv{
+    display: flex;
+    border: 1px solid blue;
+    border-radius: 10px;
+    height: 40px;
+    margin-top: 20px;
+    width: 300px;
+    border: 1px solid black;
+    margin-right: 50px;
+   }
+
+   .dateDiv>input{
+    width: 145px;
+    height: 30px;
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 0px;
+    margin-top: 5px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 0px;
+   }
+
+   .dateDiv>input:hover{
+    cursor: pointer;
+    background-color: rgb(191, 187, 187);;
+    color: black;
+   }
+
+   .dateDiv>h3{
+    /* margin-top: 30px; */
+    padding-top: 10px;
+     
+    margin-right: 20px;
+    margin: 0px;
+   }
+
+   .dateDiv:hover{
+    cursor: pointer;
+    background-color: rgb(191, 187, 187);;
+    color: black;
+   }
+
+  #searchBar{
+    width: 800px;
+    height: 50px;
+    border-radius: 30px;
+    padding-left: 20px;
+    font-size: 15px;
+    font-weight: bolder;
+  }
+
+  #searchBar:hover{
+    border: 5px solid skyblue;
+  }
+
+  #searchBtn{
+    margin-left: -120px;
+    width: 100px;
+    font-size: 20px;
+    height: 35px;
+    border-radius: 25px;
+    background-color: #a1e117;
+    border: 0px;
+    color: white;
+    margin-top: 10px;
+  }
+
+  #datefilter{
+    /* margin-left: 1200px; */
+  }
+
 #tripDate{
     margin-top: 5px;
     margin: auto;
@@ -417,3 +544,55 @@ text-decoration: none;
     background-color: red;
     color: black;
   }
+
+
+
+
+  /* Footer part */
+  #footer{
+    background-color: #3EA8FF;
+    margin-top:50px;
+}
+#footer hr{
+  width: 95%;
+}
+#footer img{
+    width: 35px;
+    margin-left: 10px;
+}
+#newsLater{
+    text-align: center;
+padding-top: 40px;
+}
+#pack{ 
+ text-align: center;
+}
+#pack>button{
+    margin-left: 30px;
+    width: 170px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    color: #3EA8FF;
+    font-weight: bold;
+    font-size: large;
+    border: none;
+
+}
+#pack>input{
+    width: 400px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    color: #3EA8FF;
+    font-weight: bold;
+    font-size: large;
+   padding-left: 20px;
+}
+
+#f123{
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+}

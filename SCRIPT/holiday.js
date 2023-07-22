@@ -5,6 +5,13 @@ let linkedIn = document.querySelector(".linkedInImg");
 let insta = document.querySelector(".instaImg");
 let youTube = document.querySelector(".youTubeImg");
 
+//selectores for middle div
+let search = document.getElementById("searchBar");
+
+
+//selectors for filter
+let byRating = document.getElementById("byRating");
+let byPrice = document.getElementById("byPrice");
 
 let container = document.getElementById("container");
 
@@ -70,7 +77,7 @@ let arr = [ {
 displayPopularPlaces(arr)
 
 function displayPopularPlaces(data){
-
+     container.innerHTML="";
     for(let i=0;i<2;i++){
      
          let card=document.createElement("div");
@@ -151,6 +158,8 @@ function displayPopularPlaces(data){
                 ArrowFunc(data[i].moreImage,0)
                  
             })
+
+
                  }
      
      }
@@ -196,6 +205,49 @@ function displayPopularPlaces(data){
     MoreInfoCloseBtn.addEventListener("click",()=>{
         moreInfo_closeForm();
     })
+
+
+    //filter part for Search input
+    search.addEventListener("input",function(){
+        console.log(search.value)
+        let searched=arr.filter(function(e){
+            if(e.location.toUpperCase().includes(search.value.toUpperCase())===true || e.country.toUpperCase().includes(search.value.toUpperCase())===true){
+                return e
+            } 
+        })
+        displayPopularPlaces(searched);
+    })
+
+     //filter part for rating
+    byRating.addEventListener("change",function(){
+
+        let rate=arr.filter(function(e){
+           if(e.rating==byRating.value){
+            return e;
+           }
+        })
+
+        displayPopularPlaces(rate);
+        })
+
+     //filter part for price
+        byPrice.addEventListener("change",function(){
+
+            if(byPrice.value=="LTH"){
+            let low=arr.sort(function(a,b){
+                return a.price-b.price
+            })
+
+            displayPopularPlaces(low);
+        }
+        else if(byPrice.value==="HTL"){
+            let high=arr.sort(function(a,b){
+                return b.price-a.price
+            })
+
+            displayPopularPlaces(high);
+                    
+                }})       
 
 
 

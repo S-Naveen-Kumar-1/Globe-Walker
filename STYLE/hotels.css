@@ -152,6 +152,86 @@ text-decoration: none;
       font-weight: bolder;
       font-size: 40px
   }
+  .middleText{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin: auto;
+    margin-top: 130px;
+
+  }
+
+  .middleText>h1{
+   margin-bottom: 0px;
+  }
+
+  .middleText>h4{
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-size: 25px;
+   }
+
+   #searchBar{
+    width: 800px;
+    height: 50px;
+    border-radius: 30px;
+    padding-left: 20px;
+    font-size: 15px;
+    font-weight: bolder;
+  }
+
+  #searchBar:hover{
+    border: 5px solid skyblue;
+  }
+
+  #searchBtn{
+    margin-left: -120px;
+    width: 100px;
+    font-size: 20px;
+    height: 35px;
+    border-radius: 25px;
+    background-color: #a1e117;
+    border: 0px;
+    color: white;
+    margin-top: 10px;
+  }
+
+  .Filter{
+    display: flex;
+    justify-content: space-between;
+   }
+   #byPrice{
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    margin-right: 15px;
+    margin-left: 35px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+   }
+
+   #byPrice:hover{
+    cursor: pointer;
+    background-color: rgb(191, 187, 187);;
+    color: black;
+   }
+
+   #byRating{
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 0px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+   }
+   #byRating:hover{
+    cursor: pointer;
+    background-color: rgb(191, 187, 187);;
+    color: black;
+   }
 
   #container{
     margin: auto;
