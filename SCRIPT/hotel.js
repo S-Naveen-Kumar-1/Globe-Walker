@@ -131,11 +131,12 @@ function displayHotelPlaces(data){
              card2.append(rating,stars);
              card4.append(enquiry,addCartBtn);
              card2.id="rating";
-             card.append(image,card2,title,price,moreInfo,card4);
+             card.append(image,card2,title,price,card4);
              container.append(card);
      
  
              enquiry.addEventListener("click",()=>{
+              console.log("hi");
                  enquiry_openForm();
              })
 
@@ -242,3 +243,15 @@ function displayHotelPlaces(data){
          }   })
               
             }
+
+
+// functions for enquiry form
+function enquiry_openForm() {
+
+  document.getElementById("my_enquiry-form").style.display = "block";
+
+}
+
+function enquiry_closeForm() {
+  document.getElementById("my_enquiry-form").style.display = "none";
+} 
