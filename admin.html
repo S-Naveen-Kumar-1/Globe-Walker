@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/skeleton.css" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <title>Library System</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <h1>🏫 Library Management System 📚</h1>
+        <p>Library Management System</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="columns four sidebar-one" id="sidebar-one">
+
+        <h4>Add Book</h4>
+        <input type="text" id="book-title" class="u-full-width" placeholder="Title" />
+        <input type="text" id="book-image" class="u-full-width" placeholder="Image Url" />
+        <input type="text" id="book-category" class="u-full-width" placeholder="Category" />
+        <input type="text" id="book-author" class="u-full-width" placeholder="Author" />
+        <input type="number" id="book-price" class="u-full-width" placeholder="Price" />
+        <button id="add-book" class="u-full-width button button-primary">
+          Add Book
+        </button>
+        <hr />
+
+        <h4>update all fields of Book</h4>
+        <input type="text" id="update-book-id" class="u-full-width" placeholder="ID" />
+        <input type="text" id="update-book-title" class="u-full-width" placeholder="Title" />
+        <input type="text" id="update-book-image" class="u-full-width" placeholder="Image Url" />
+        <input type="text" id="update-book-author" class="u-full-width" placeholder="Author" />
+        <input type="text" id="update-book-category" class="u-full-width" placeholder="Category" />
+        <input type="number" id="update-book-price" class="u-full-width" placeholder="Price" />
+        <button id="update-book" class="u-full-width button button-primary">
+          Update all fields
+        </button>
+        <hr />
+
+        <h4>update only Price</h4>
+        <input type="text" id="update-price-book-id" class="u-full-width" placeholder="ID" />
+        <input type="number" id="update-price-book-price" class="u-full-width" placeholder="Price" />
+        <button id="update-price-book" class="u-full-width button button-primary">
+          Update book Price
+        </button>
+        <hr />
+
+        <h4>Sort Based On Price</h4>
+        <button id="sort-low-to-high" class="u-full-width button button-primary">
+          Sort Low To High
+        </button>
+        <button id="sort-high-to-low" class="u-full-width button button-primary">
+          Sort High To Low
+        </button>
+        <hr />
+
+        <h4>Filter Based On Category </h4>
+        <button id="filter-Classic" class="u-full-width button button-primary">
+          Classic
+        </button>
+        <button id="filter-Fantasy" class="u-full-width button button-primary">
+          Fantasy
+        </button>
+        <button id="filter-Mystery" class="u-full-width button button-primary">
+          Mystery
+        </button>
+       
+      </div>
+
+      <div class="columns eight main">
+        <div class="search-book-wrapper" id="search-book-wrapper">
+          <select id="search-by-select" >
+            <option value="">Search By</option>
+            <option value="title">Title</option>
+            <option value="author">Author</option>
+          </select>
+          <input type="text"  id="search-by-input" placeholder="Enter Title/Author here" >
+          <button id="search-by-button" style="background-color: #33c3f0 ;color: white;border: none;">Search</button>
+
+        </div>
+        <div class="data-list-wrapper" id="data-list-wrapper">
+          <!-- append card-list that includes card here -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./scripts/main.js" type="module"></script>
+</body>
+
+</html>
