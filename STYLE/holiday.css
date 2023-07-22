@@ -636,3 +636,95 @@ align-items: center;
 justify-content: center;
 color: white;
 }
+
+
+
+/* The popup form - hidden by default */
+.enquiry-form-popup {
+  display: none;
+  position: fixed;
+  bottom: 10%;
+  right: 25%;
+  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* Add styles to the form container */
+.enquiry-form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: lightskyblue;
+}
+
+/* Full-width input fields */
+.enquiry-form-container input[type=text]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.enquiry-form-container input[type=text]:focus{
+  background-color: #ddd;
+  outline: none;
+}
+
+#innerDivForm{
+  display: flex;
+  background-color: #F2F2F2;
+}
+#innerDivForm>div:nth-child(1){
+  width: 400px;
+  text-align: justify;
+  color: #494F5D;
+  margin-right: 35px;
+}
+#innerDivForm>div:nth-child(1)>h1{
+  margin-left: 25px;
+}
+#innerDivForm>div:nth-child(1)>img{
+  width: 40px;
+  margin-left: 15px;
+  margin-top: 20px;
+}
+#innerDivForm>div:nth-child(1)>#first{
+ margin-left: 122px;
+}
+#innerDivForm>div:nth-child(1)>hr{
+    width: 90%;
+}
+#innerDivForm>div:nth-child(1)>h3{
+  text-align: center;
+}
+#innerDivForm>div:nth-child(1)>h2{
+  color: orange;
+  text-align: center;
+}
+
+/* enquiry 2nd div */
+#innerDivForm>div:nth-child(2){
+ background-color: lightskyblue;
+ width: 300px;
+}
+#name,#country,#email,#desc,#travDate,#persons,#contact{
+  width: 260px;
+  height: 30px;
+  margin-bottom: 15px;
+  background-color: #F1F1F1;
+  border: 0px;
+  border-radius: 5px;
+}
+#enquiry-submitBtn{
+ background-color: greenyellow;
+ width: 100px;
+ height: 30px;
+ color:black;
+}
+#enquiry-closeBtn{
+  background-color: red;
+ width: 100px;
+ height: 30px;
+ color:black;
+}
