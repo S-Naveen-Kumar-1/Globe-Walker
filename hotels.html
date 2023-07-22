@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="./STYLE/hotels.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- Google Web Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -149,6 +149,7 @@
 
             <button class="close">Close</button>
         </div>
+        </div>
         <!-- more Info popup start-->
 </div>
 
@@ -173,6 +174,53 @@
            </div>
          </div>
     </div>
+=======
+
+         <!-- The form -->
+<div class="enquiry-form-popup" id="my_enquiry-form">
+
+    <div id="innerDivForm">
+    <div>
+      <h1>How it work</h1>
+      <ul>
+      <li>Tell us details of your holiday plan.</li>
+      <br>
+      <li>After you submit the form, one of our travel experts will get back to you with customised hotel package based on your requirement, within 24 hours.</li>
+      <br>
+      <li>Grab the deal and start packing your bags for an indelible hotel with Globe Walker.</li>
+    </ul>
+  
+     <img id="first" src="https://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19757.png" alt="Error">
+     <img src="https://imagepng.org/wp-content/uploads/2018/08/twitter-icone.png" alt="Error">
+     <img src="https://logopng.com.br/logos/instagram-40.png" alt="">
+     <hr>
+     <h3>Call us for details</h3>
+     <h2>+91 1234567890</h2>
+    </div>
+    <div>
+    <form class="enquiry-form-container">
+      <label for="name">Full Name</label>
+      <input type="text" required id="name" name="name" placeholder="Your name..">
+      <label for="country">Country</label>
+      <input type="text" required id="country" name="country" placeholder="Type your country name">
+      <label for="email">Email ID</label>
+      <input type="text" required name="email" id="email" placeholder="Type your email here">
+      <label for="desc">Descriptions</label>
+      <input type="text" name="desc" id="desc" placeholder="Enter your Tour Description">
+      <label for="travDate">Check-In Date</label>
+      <input type="date" required name="travDate" id="travDate">
+      <label for="persons">No. of person</label>
+      <input type="number" required name="persons" id="persons">
+      <label for="contact">Contact No</label>
+      <input type="number" required name="contact" id="contact">
+      <button type="submit" id="enquiry-submitBtn" onclick="enquiry_closeForm()">Submit</button>
+      <button id="enquiry-closeBtn" onclick="enquiry_closeForm()">Close</button>
+    </form>
+    </div>
+   </div>
+  </div>
+
+
 </body>
 
 </html>

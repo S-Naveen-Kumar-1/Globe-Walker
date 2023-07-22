@@ -5,6 +5,7 @@
 
 
 }
+
 :root {
     --primary: #86B817;
     --secondary: #FE8800;
@@ -27,6 +28,7 @@
     bottom: 45px;
     z-index: 99;
 }
+
 #main {
     background-color: white;
     /* background-image: url(""); */
@@ -35,9 +37,10 @@
 
 }
 
-body{
+body {
     margin: 0%;
 }
+
 /* .Top_bar {
     width: 100%;
     
@@ -48,121 +51,131 @@ body{
 
 
 /* for Above navBar div*/
-.AboveNavBarDiv{
+.AboveNavBarDiv {
     background-color: black;
     height: 45px;
     width: 100%;
     display: flex;
     justify-content: space-between;
-  }
-  
-  .AboveNavBarDiv1{
-  height: 100%;
-  display: flex; 
-  color: white;
-  margin-left: 30px;
-  }
-  .AboveNavBarDiv1>div{
+}
+
+.AboveNavBarDiv1 {
+    height: 100%;
+    display: flex;
+    color: white;
+    margin-left: 30px;
+}
+
+.AboveNavBarDiv1>div {
     display: flex;
     align-items: center;
     height: 100%;
     gap: 10px;
     margin-left: 15px;
-  }
-  
-  .AboveNavBarDiv1>div:nth-child(3)>img{
-     width: 17px;
-   }
-  
-  .AboveNavBarDiv1>div:nth-child(2)>img{
+}
+
+.AboveNavBarDiv1>div:nth-child(3)>img {
     width: 17px;
-   } 
-  
-  .AboveNavBarDiv1>div:nth-child(1)>img{
+}
+
+.AboveNavBarDiv1>div:nth-child(2)>img {
+    width: 17px;
+}
+
+.AboveNavBarDiv1>div:nth-child(1)>img {
     width: 10px;
-   } 
-  
-   .AboveNavBarDiv2{
+}
+
+.AboveNavBarDiv2 {
     height: 100%;
     display: flex;
     align-items: center;
     gap: 10px;
     margin-right: 70px;
-    }
-  
-    
-    .AboveNavBarDiv2>img{
-      width: 35px;
-      height: 35px;
-      background-color: white;
-      border-radius: 40px;
-    }
-    .AboveNavBarDiv2>img:hover{
-        cursor: pointer;
-        transform: translateY(-3px);
-          }
-    /* for Header part which consist Navbar */
-    #header{
-      /* background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url("../IMAGES/bg-hero.jpg"); */
-      background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url("https://img.freepik.com/premium-photo/group-young-multi-ethnic-friends-taking-selfie-vacation-with-sunset-background_533849-442.jpg?w=2000");
-      height: 590px;
-      background-size: cover; 
-    
-    }
-  
-    #navbar1{
+}
+
+
+.AboveNavBarDiv2>img {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 40px;
+}
+
+.AboveNavBarDiv2>img:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
+/* for Header part which consist Navbar */
+#header {
+    /* background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url("../IMAGES/bg-hero.jpg"); */
+    background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url("https://img.freepik.com/premium-photo/group-young-multi-ethnic-friends-taking-selfie-vacation-with-sunset-background_533849-442.jpg?w=2000");
+    height: 590px;
+    background-size: cover;
+
+}
+
+#navbar1 {
     /* font-family: 'Nunito', sans-serif; */
-      display: flex;
-      width: 100%;
-      align-items: center;
-      justify-content: space-between;
-      height: 90px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
     position: relative;
     transition: .5s;
 
-    }
-    #navbar1 > div:nth-child(2){
-        /* border: 1px solid red; */
-      width: 60%;
-      display: flex;
-      justify-content: space-evenly;
-      font-size: large;
-      /* margin-right: 200px; */
-      text-underline-offset: 50px;
-    }
-    #navbar1>#log{
-        width: 20%;
-        /* border: 1px solid green; */
+}
 
-    }
-    #navOptions>a{
-      color: white;
-      font-size: 20px;
-    }
-    #navOptions>a:nth-child(1){
-        color: #a1e117;
-        text-decoration: underline;
-        text-decoration-thickness: 3px;
-    }
-    #navOptions>a:nth-child(2){
-      color: white;
-      text-decoration: none;
-    }
-    #navOptions>a:nth-child(3){
-      color: white;
-      text-decoration: none;
-    }
-    #navOptions>a:nth-child(4){
-        color: white;
-        text-decoration: none;
-    }
-  
-    #navOptions>a:nth-child(5){
-      color: white;
-      text-decoration: none;
-    }
-    
-    #navOptions>:nth-child(6){
+#navbar1>div:nth-child(2) {
+    /* border: 1px solid red; */
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: large;
+    /* margin-right: 200px; */
+    text-underline-offset: 50px;
+}
+
+#navbar1>#log {
+    width: 20%;
+    /* border: 1px solid green; */
+
+}
+
+#navOptions>a {
+    color: white;
+    font-size: 20px;
+}
+
+#navOptions>a:nth-child(1) {
+    color: #a1e117;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+
+#navOptions>a:nth-child(2) {
+    color: white;
+    text-decoration: none;
+}
+
+#navOptions>a:nth-child(3) {
+    color: white;
+    text-decoration: none;
+}
+
+#navOptions>a:nth-child(4) {
+    color: white;
+    text-decoration: none;
+}
+
+#navOptions>a:nth-child(5) {
+    color: white;
+    text-decoration: none;
+}
+
+#navOptions>:nth-child(6) {
     width: 10%;
     height: 40px;
     display: flex;
@@ -172,62 +185,119 @@ body{
     margin-top: -10px;
     text-decoration: none;
     /* background-color: #86B817; */
-    }
+}
 
-  #navOptions>:nth-child(6)>img{
+#navOptions>:nth-child(6)>img {
     width: 70%;
-  }
-    #navOptions>a:hover{
-      cursor: pointer;
-      color: #a1e117;
-      text-decoration: underline;
-      text-decoration-thickness: 3px;
-      transition: .5s;
-      transition-duration: 0.5s;
-      transition-timing-function: ease;
-      transition-delay: 0s;
-      transition-property: all;
-  }
-  
-  #navOptions>:nth-child(6):hover{
+}
+
+#navOptions>a:hover {
+    cursor: pointer;
+    color: #a1e117;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    transition: .5s;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: all;
+}
+
+#navOptions>:nth-child(6):hover {
     color: #FFFFFF;
-    background-color:#a1e117;
-  text-decoration: none;
+    background-color: #a1e117;
+    text-decoration: none;
     color: whitesmoke;
-  }
-  #header>hr{
+}
+
+#header>hr {
     background-color: #585658;
     inline-size: 100%;
     height: 1px;
     border: 0px;
-  }
-  
-     #log {
-      margin-left: 70px;
-        color: #86B817;
-        font-weight: bolder;
-        font-size: 40px
-    }
-
-/* hameburgur css */
-
-
-.hamburger-menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 20px;
-  cursor: pointer;
-  padding: 10px;
-}
-.bar {
-  width: 100%;
-  height: 4px;
-  background-color: #333;
 }
 
-/* =-=-=-=-=-=-=-= */
+#log {
+    margin-left: 70px;
+    color: #86B817;
+    font-weight: bolder;
+    font-size: 40px
+}
+
+/* for the text od introduction  */
+
+#intro_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+/* hotels tickets css */
+.p-card {
+    /* border: 2px solid black; */
+    border-radius: 20px;
+    padding: 20px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    box-shadow: var(--primary) 0px 3px 8px;
+    margin: 3%;
+}
+
+.p-card img {
+    width: 100%;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.p-card p {
+    background-color: var(--dark);
+    padding: 10px;
+    width: 100px;
+    font-weight: bolder;
+    font-size: 20px;
+    position: sticky;
+    margin-top: -160px;
+    border-radius: 0 5px 5px 0;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.p-card h2 {
+    color: var(--primary);
+    margin-top: 130px !important;
+}
+
+.checked:before {
+    content: "✓";
+    align-items: center !important;
+    justify-content: center;
+    width: 1rem;
+    height: 1rem;
+    padding: 10px;
+    background-color: var(--primary);
+    color: white;
+    margin-right: 1rem;
+    border-radius: 30px;
+    font-size: 20px;
+    display: inline-flex;
+}
+
+.checked {
+    list-style: none;
+    font-weight: bold;
+    font-size: 19px;
+    padding: 6px;
+}
+
+
+.p-card button {
+    /* background-color: rgb(15, 86, 192); */
+    background-color: var(--primary);
+    color: white;
+    padding: 8px 13px;
+    border: none;
+    border-radius: 10px;
+}
 
 /* Content to lander page */
 
@@ -237,7 +307,7 @@ body{
     margin: auto;
     justify-content: space-between;
     margin-top: 4%;
-    
+
 }
 
 #content_img {
@@ -245,20 +315,22 @@ body{
     display: flex;
     border-radius: 10%;
 
- width: 25%;
+    width: 25%;
 
 }
 
-#contentInfo{
+#contentInfo {
     margin-top: -5%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     /* font-style: italic; */
     /* font-size: 18px; */
 }
-#contentInfo>h3{
-margin-top: 7%;
+
+#contentInfo>h3 {
+    margin-top: 7%;
 
 }
+
 #content_img>img:nth-child(1) {
     height: 100%;
     width: 100%;
@@ -279,7 +351,7 @@ margin-top: 7%;
     /* border-radius: 49%; */
     border: 5px solid #dbdedf;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    
+
 }
 
 #content_btn {
@@ -301,13 +373,13 @@ margin-top: 7%;
 
 #desc {
     text-align: center;
-   
+
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #description {
     text-align: center;
-    
+
 }
 
 /* midDiv part */
@@ -330,16 +402,18 @@ margin-top: 7%;
     text-align: center;
     gap: 5%;
     width: 80%;
-    margin: auto;  
-    margin-top: 5%; 
+    margin: auto;
+    margin-top: 5%;
 }
+
 #threeCards>div>img {
-   height: 30%;
-   width: 30%;
-   margin-top: 5%;
-    
+    height: 30%;
+    width: 30%;
+    margin-top: 5%;
+
 }
-#threeCards>div{
+
+#threeCards>div {
     width: 80%;
     border-radius: 10px;
     border: 1px solid rgb(168, 164, 164);
@@ -347,87 +421,94 @@ margin-top: 7%;
 
 }
 
-#threeCards>div:hover{
+#threeCards>div:hover {
     transform: translateY(-3px);
 }
 
 /* world map info */
 
-#worldMapInfo{
+#worldMapInfo {
     margin-top: 10%;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-#worldImg>img{
+
+#worldImg>img {
     margin: auto;
     width: 100%;
 }
 
 /* cards popular destinations */
 
-#popularDestination{
+#popularDestination {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 5%;
     margin-bottom: 5%;
 }
 
-#destinationDiv{
+#destinationDiv {
     display: flex;
     justify-content: center;
     gap: 1%;
     text-align: center;
     width: 90%;
     margin: auto;
-   /* border: 2px solid black; */
-   
+    /* border: 2px solid black; */
+
 }
-#destinationDiv :hover{
+
+#destinationDiv :hover {
     transform: translateY(-2px);
 }
-#destinationDiv>div{
+
+#destinationDiv>div {
     border: 1px solid rgb(239, 215, 215);
     box-shadow: rgba(70, 64, 64, 0.35) 0px 5px 15px;
     width: 30%;
-    margin :auto;
+    margin: auto;
     border-radius: 15px;
     padding: 2%;
 }
 
-#destinationDiv>div>img{
+#destinationDiv>div>img {
     margin-top: 2%;
     width: 89%;
     height: 200px;
     border-radius: 5%;
 
 }
-#destinationDiv>div>div{
+
+#destinationDiv>div>div {
     display: flex;
     justify-content: space-around;
     align-items: center;
 
 }
-#destinationDiv>div>div>button{
 
-width: 25%;
-height: 50%;
-background-color: white;
-color: #17628e;
-font-size: 16px;
-border-radius: 10px;
+#destinationDiv>div>div>button {
+
+    width: 25%;
+    height: 50%;
+    background-color: white;
+    color: #17628e;
+    font-size: 16px;
+    border-radius: 10px;
 }
-#destinationDiv>div>div>button:hover{
+
+#destinationDiv>div>div>button:hover {
     cursor: pointer;
     background-color: #0d0d0d;
     color: white;
 }
 
 /* mountain */
-#mountain{
-   margin-top: 5%;
+#mountain {
+    margin-top: 5%;
 
 }
-#mountain>img{
+
+#mountain>img {
     width: 100%;
     display: flex;
     margin: auto;
@@ -435,7 +516,7 @@ border-radius: 10px;
 }
 
 /* get in touch */
-#getInTouch{
+#getInTouch {
     text-align: center;
     margin: auto;
     width: 80%;
@@ -443,48 +524,56 @@ border-radius: 10px;
     margin-top: 5%;
     margin-bottom: 5%;
 }
-#form{
+
+#form {
     width: 90%;
     margin: auto;
     display: grid;
     justify-content: center;
     /* border: 1px solid black; */
     text-align: center;
-    
+
     margin-bottom: 5%;
-    
+
 }
-#details{
+
+#details {
     display: flex;
     width: 90%;
     gap: 2%;
 }
-#name{
+
+#name {
     font-size: 20px;
     border-radius: 10px;
-    
+
 }
-#email{
+
+#email {
     font-size: 20px;
     border-radius: 10px;
 }
-#message{
+
+#message {
     width: 102%;
     font-size: 20px;
     border-radius: 10px;
 }
-#form-btn>button{
+
+#form-btn>button {
     width: 25%;
     margin: 2%;
     padding: 1%;
     border-radius: 10px;
 }
-#form-btn>button:hover{
+
+#form-btn>button:hover {
     cursor: pointer;
     color: white;
-    background-color:black;
+    background-color: black;
 
 }
+
 
 
 
@@ -492,22 +581,29 @@ border-radius: 10px;
  #footer{
     background-color: #9ccbf1;
     margin-top:50px;
+
+
+
+
+#footer hr {
+    width: 95%;
 }
-#footer hr{
-  width: 95%;
-}
-#footer img{
+
+#footer img {
     width: 35px;
     margin-left: 10px;
 }
-#newsLater{
+
+#newsLater {
     text-align: center;
-padding-top: 40px;
+    padding-top: 40px;
 }
-#pack{ 
- text-align: center;
+
+#pack {
+    text-align: center;
 }
-#pack>button{
+
+#pack>button {
     margin-left: 30px;
     width: 170px;
     height: 50px;
@@ -519,7 +615,8 @@ padding-top: 40px;
     border: none;
 
 }
-#pack>input{
+
+#pack>input {
     width: 400px;
     height: 50px;
     border-radius: 20px;
@@ -527,12 +624,12 @@ padding-top: 40px;
     color: #3EA8FF;
     font-weight: bold;
     font-size: large;
-   padding-left: 20px;
+    padding-left: 20px;
 }
 
-#f123{
-display: flex;
-align-items: center;
-justify-content: center;
-color: white;
+#f123 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
