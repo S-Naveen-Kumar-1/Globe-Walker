@@ -75,6 +75,7 @@ function displayHotelPlaces(data){
              let addCartBtn=document.createElement("button");
              let country=document.createElement("h3");
                  country.innerText=data[i].country;
+                 card.className="cardDiv"
 
                 //  adding card to ls and later will append to cart page
           
