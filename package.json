@@ -1,0 +1,24 @@
+{
+  "name": "boorish-earthquake-4077",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/S-Naveen-Kumar-1/boorish-earthquake-4077.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/S-Naveen-Kumar-1/boorish-earthquake-4077/issues"
+  },
+  "homepage": "https://github.com/S-Naveen-Kumar-1/boorish-earthquake-4077#readme",
+  "dependencies": {
+    "json-server": "^0.17.3"
+  }
+}
