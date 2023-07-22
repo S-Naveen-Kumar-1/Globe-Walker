@@ -42,3 +42,20 @@ formBtn.addEventListener("click",function(){
  localStorage.setItem("formDetails",JSON.stringify(formDetails))
 })
 
+
+//three cards btn linked to hotel page
+
+let threeCardBtn1=document.querySelector(".threeCardBtn1");
+let threeCardBtn2=document.querySelector(".threeCardBtn2")
+let threeCardBtn3=document.querySelector(".threeCardBtn3")
+
+threeCardBtn1.addEventListener("click",function(){
+    window.location.href="./hotels.html"
+})
+threeCardBtn2.addEventListener("click",function(){
+    window.location.href="./hotels.html"
+})
+threeCardBtn3.addEventListener("click",function(){
+    window.location.href="./hotels.html"
+})
+
