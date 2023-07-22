@@ -1,0 +1,66 @@
+:root {
+    --primary: #86B817;
+    --secondary: #FE8800;
+    --light: #F5F5F5;
+    --dark: #14141F;
+}
+
+
+body{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    margin: auto;
+
+}
+ #li-1,#li-2,#li-3
+ {
+    padding: 2%;
+    text-decoration: none;
+ }
+ a{
+    text-decoration: none;
+ }
+
+ h2 {
+    color: #333;
+  }
+
+  form {
+    margin-top: 20px;
+  }
+
+  label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+  }
+
+  select {
+    font-size: 16px;
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  select:hover {
+    border-color: #888;
+  }
+
+  select:focus {
+    outline: none;
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+  }
+
+  option {
+    font-size: 16px;
+  }
+
+  #cancel-payment{
+    border-radius: 20px 0px 0px 20px;
+  }
