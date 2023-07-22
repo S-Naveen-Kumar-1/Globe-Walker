@@ -193,6 +193,7 @@ margin-left: 30px;
     margin-bottom: 30px;
     margin-top: 10px;
     font-size: 25px;
+  
    }
 
    #searchBar{
@@ -265,6 +266,7 @@ margin-left: 30px;
   row-gap: 17px;
   justify-content: space-evenly;
   text-align: center;
+  
 }
 
 #container>div{
@@ -282,7 +284,13 @@ margin-left: 30px;
     width: 100%;
     height: 250px;
     border-top-right-radius: 20px;
-    border-top-left-radius: 20px;    
+    border-top-left-radius: 20px; 
+    position: relative;
+    transition: transform 0.3s ease;
+  transform: translateX(0px); 
+}
+#container>div>img:hover{
+  transform: translateX(10px)
 }
 
   #rating{
@@ -290,7 +298,8 @@ margin-left: 30px;
     text-align: center;
     align-items: center;
     gap: 10px;
-    margin-right: 20px;
+   margin-left: 10px;
+    
 }
 
 #container .enquiry_ToCartDiv{
@@ -465,6 +474,63 @@ margin-left: 30px;
     color: black;
   }
 
+
+/* Footer part */
+#footer{
+  background-color: #9ccbf1;
+  margin-top:50px;
+}
+#footer hr{
+width: 95%;
+}
+#footer img{
+  width: 35px;
+  margin-left: 10px;
+}
+#newsLater{
+  text-align: center;
+padding-top: 40px;
+}
+#pack{ 
+text-align: center;
+}
+#pack>button{
+  margin-left: 30px;
+  width: 170px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  color: #3EA8FF;
+  font-weight: bold;
+  font-size: large;
+  border: none;
+
+}
+#pack>input{
+  width: 400px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  color: #3EA8FF;
+  font-weight: bold;
+  font-size: large;
+ padding-left: 20px;
+}
+
+#f123{
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+}
+
+
+
+
+
+
+  
+=======
   /* The popup form - hidden by default */
 .enquiry-form-popup {
   display: none;
@@ -554,3 +620,4 @@ margin-left: 30px;
  height: 30px;
  color:black;
 }
+

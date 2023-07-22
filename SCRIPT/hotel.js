@@ -124,6 +124,8 @@ function displayHotelPlaces(data){
             
              enquiry.innerText="Send Enquiry";
              enquiry.setAttribute("class","enquiryBtn");
+              
+    
 
              addCartBtn.innerText="Add to cart";
              addCartBtn.setAttribute("class","addCartBtn");
@@ -136,6 +138,7 @@ function displayHotelPlaces(data){
      
  
              enquiry.addEventListener("click",()=>{
+
               console.log("hi");
                  enquiry_openForm();
              })
@@ -150,6 +153,7 @@ function displayHotelPlaces(data){
                  }
      
      }
+// enquiry
 
 
     // More Info popup functions and eventListerners

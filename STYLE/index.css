@@ -575,11 +575,15 @@ body {
 }
 
 
-/* Footer part */
-#footer {
-    background-color: #3EA8FF;
-    margin-top: 50px;
-}
+
+
+ /* Footer part */
+ #footer{
+    background-color: #9ccbf1;
+    margin-top:50px;
+
+
+
 
 #footer hr {
     width: 95%;
