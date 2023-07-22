@@ -209,25 +209,71 @@ body{
         font-size: 40px
     }
 
-/* hameburgur css */
-
-
-.hamburger-menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 20px;
-  cursor: pointer;
-  padding: 10px;
-}
-.bar {
-  width: 100%;
-  height: 4px;
-  background-color: #333;
+ /* hotels tickets css */
+ .p-card{
+    /* border: 2px solid black; */
+    border-radius: 20px;
+    padding: 20px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    box-shadow: var(--primary) 0px 3px 8px;
+    margin: 3%;
 }
 
-/* =-=-=-=-=-=-=-= */
+.p-card img{
+    width: 100%;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.p-card p{
+    background-color: var(--dark);
+    padding: 10px;
+   width: 100px;
+   font-weight: bolder;
+   font-size: 20px;
+   position: sticky;
+  margin-top: -160px;
+   border-radius: 0 5px 5px 0;
+   color: white;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.p-card h2{
+    color: var(--primary);
+    margin-top: 130px !important;
+}
+
+.checked:before{
+    content: "✓";
+    align-items: center !important;
+    justify-content: center;
+    width: 1rem;
+    height: 1rem;
+    padding: 10px;
+   background-color: var(--primary);
+   color: white;
+    margin-right: 1rem;
+    border-radius: 30px;
+    font-size: 20px;
+    display: inline-flex;
+}
+
+.checked{
+    list-style: none;
+    font-weight: bold;
+    font-size: 19px;
+    padding: 6px;
+}
+
+
+.p-card button{
+    /* background-color: rgb(15, 86, 192); */
+    background-color: var(--primary);
+    color: white;
+    padding: 8px 13px;
+    border: none;
+    border-radius: 10px;
+}
 
 /* Content to lander page */
 
