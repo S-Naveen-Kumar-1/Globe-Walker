@@ -1,6 +1,28 @@
 *{
     box-sizing: border-box;
 }
+:root {
+  --primary: #86B817;
+  --secondary: #FE8800;
+  --light: #F5F5F5;
+  --dark: #14141F;
+}
+
+.fw-medium {
+  font-weight: 600 !important;
+}
+
+.fw-semi-bold {
+  font-weight: 700 !important;
+}
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 45px;
+  bottom: 45px;
+  z-index: 99;
+}
 .checked {
     color: orange;
 }
