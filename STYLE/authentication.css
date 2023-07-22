@@ -29,50 +29,181 @@
   bottom: 45px;
   z-index: 99;
 }
-#navbar {
-  width: 90%;
+
+/* for Above navBar div*/
+.AboveNavBarDiv {
+  background-color: black;
+  height: 45px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  margin: auto;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+}
+
+.AboveNavBarDiv1 {
+  height: 100%;
+  display: flex;
+  color: white;
+  margin-left: 30px;
+}
+
+.AboveNavBarDiv1>div {
+  display: flex;
   align-items: center;
-  margin-top: 1%;
-
-  /* background: transparent; */
-  background-color: #e3f5ff;
+  height: 100%;
+  gap: 10px;
+  margin-left: 15px;
 }
 
-#navbar img {
-  width: 33%;
-  border-radius: 30%;
-  margin: auto;
-  margin-left: 1%;
+.AboveNavBarDiv1>div:nth-child(3)>img {
+  width: 17px;
 }
 
-#navOptions {
-  width: 50%;
+.AboveNavBarDiv1>div:nth-child(2)>img {
+  width: 17px;
+}
+
+.AboveNavBarDiv1>div:nth-child(1)>img {
+  width: 10px;
+}
+
+.AboveNavBarDiv2 {
+  height: 100%;
   display: flex;
-  justify-content: space-between;
-  font-size: large;
-  margin: 1%;
+  align-items: center;
+  gap: 10px;
+  margin-right: 70px;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-  transition: text-decoration;
+
+.AboveNavBarDiv2>img {
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  border-radius: 40px;
+}
+
+.AboveNavBarDiv2>img:hover {
   cursor: pointer;
+  transform: translateY(-3px);
 }
 
-a:hover {
+/* for Header part which consist Navbar */
+#header {
+  /* background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url("../IMAGES/bg-hero.jpg"); */
+  background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url("");
+  background-size: cover;
+
+}
+#navbar1 {
+  /* font-family: 'Nunito', sans-serif; */
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+  position: relative;
+  transition: .5s;
+
+}
+
+#navbar1>div:nth-child(2) {
+  /* border: 1px solid red; */
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: large;
+  /* margin-right: 200px; */
+  text-underline-offset: 50px;
+}
+
+#navbar1>#log {
+  width: 20%;
+  /* border: 1px solid green; */
+
+}
+
+#navOptions>a {
+  color: white;
+  font-size: 20px;
+}
+
+#navOptions>a:nth-child(1) {
+
+  color: white;
+  text-decoration: none;
+}
+
+#navOptions>a:nth-child(2) {
+  color: white;
+  text-decoration: none;
+}
+
+#navOptions>a:nth-child(3) {
+  color: white;
+  text-decoration: none;
+}
+
+#navOptions>a:nth-child(4) {
+  color: white;
+  text-decoration: none;
+}
+
+#navOptions>a:nth-child(5) {
+  color: white;
+  text-decoration: none;
+}
+
+#navOptions>:nth-child(6) {
+  color: #a1e117;
   text-decoration: underline;
-  color: blue;
+  text-decoration-thickness: 3px;
+  width: 10%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  margin-top: -10px;
+  text-decoration: none;
+  /* background-color: #86B817; */
 }
 
+#navOptions>:nth-child(6)>img {
+  width: 70%;
+}
 
+#navOptions>a:hover {
+  cursor: pointer;
+  color: #a1e117;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  transition: .5s;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  transition-property: all;
+}
 
+#navOptions>:nth-child(6):hover {
+  color: #FFFFFF;
+  background-color: #a1e117;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+#header>hr {
+  background-color: #585658;
+  inline-size: 100%;
+  height: 1px;
+  border: 0px;
+}
+
+#log {
+  margin-left: 70px;
+  color: #86B817;
+  font-weight: bolder;
+  font-size: 40px
+}
 
 /* CSS Document */
 * {
