@@ -138,8 +138,6 @@ function displayHotelPlaces(data){
      
  
              enquiry.addEventListener("click",()=>{
-
-              console.log("hi");
                  enquiry_openForm();
              })
 
