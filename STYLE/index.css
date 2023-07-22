@@ -72,12 +72,16 @@ body{
       background-color: white;
       border-radius: 40px;
     }
-  
+    .AboveNavBarDiv2>img:hover{
+        cursor: pointer;
+        transform: translateY(-3px);
+          }
     /* for Header part which consist Navbar */
     #header{
       background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(../IMAGES/bg-hero.jpg);
       height: 590px;
       background-size: cover; 
+    
     }
   
     #navbar1{
