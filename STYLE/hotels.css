@@ -1,5 +1,12 @@
 *{
     box-sizing: border-box;
+    
+}
+:root {
+  --primary: #86B817;
+  --secondary: #FE8800;
+  --light: #F5F5F5;
+  --dark: #14141F;
 }
 .checked {
     color: orange;
@@ -263,7 +270,7 @@ margin-left: 30px;
     margin-top: 20px;
     display: grid;
   grid-template-columns: repeat(4,23%);
-  row-gap: 17px;
+  row-gap: 20px;
   justify-content: space-evenly;
   text-align: center;
   
@@ -277,7 +284,13 @@ margin-left: 30px;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    cursor: pointer;   
+    cursor: pointer; 
+    position: relative;
+    transition: transform 0.3s ease;
+  transform: translateY(0px);   
+}
+#container>div:hover{
+  transform: translateY(-15px)
 }
 
 #container>div>img{
@@ -285,20 +298,25 @@ margin-left: 30px;
     height: 250px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px; 
-    position: relative;
-    transition: transform 0.3s ease;
-  transform: translateX(0px); 
+   
 }
-#container>div>img:hover{
-  transform: translateX(10px)
+#container>div>h3{
+  color: var(--primary);
 }
+#container>div>h4{
+  color: var(--dark);
+  margin-bottom: 5%;
+}
+
 
   #rating{
     display: flex;
     text-align: center;
     align-items: center;
+    justify-content: center;
     gap: 10px;
-   margin-left: 10px;
+   /* margin-left: 0px;
+   border: 4px solid black; */
     
 }
 
@@ -307,29 +325,28 @@ margin-left: 30px;
     justify-content:center;
     /* align-items: center; */
     height: fit-content;
-    gap: 10px;
+    gap: 20px;
     margin-bottom: 10px;
 }
 
 #container .location{
 
-    color: #74ae36;
-
-
+    color: #eb2009;
     width:fit-content;
     margin: auto;
     margin-top: -10px;
+    border: 4px solid red;
     /* margin-bottom: 10px; */
 }
 
 #container .enquiry_ToCartDiv > .enquiryBtn{
-    border: 1px solid #6bd5b9;
+    border: transparent;
     width: 100px;
     height: 30px;
     border-radius: 10px;
     color:rgb(16, 2, 16);
     font-weight: bold;
-    background-color: #eaf5f2;
+    background-color: var(--primary);
     cursor: pointer;
     margin-bottom: 0px;
     margin-top: 10px;
@@ -337,13 +354,13 @@ margin-left: 30px;
 }
 
 #container .enquiry_ToCartDiv > .addCartBtn{
-    border: 1px solid #6bd5b9;
+    border: transparent;
     width: 100px;
     height: 30px;
     border-radius: 10px;
     color: rgb(16, 1, 16);
     font-weight: bold;
-    background-color: #eaf5f2;
+    background-color: var(--primary);
     cursor: pointer;
     margin-bottom: 0px;
     margin-top: 10px;
@@ -351,12 +368,12 @@ margin-left: 30px;
  }
 
  #container .enquiry_ToCartDiv > .enquiryBtn:hover{
-    background-color: green;
+    
     color: white;
 }
 
 #container .enquiry_ToCartDiv > .addCartBtn:hover{
-    background-color: green;
+    
     color: white;
 }
 
@@ -477,7 +494,7 @@ margin-left: 30px;
 
 /* Footer part */
 #footer{
-  background-color: #9ccbf1;
+  background-color: black;
   margin-top:50px;
 }
 #footer hr{
@@ -490,6 +507,7 @@ width: 95%;
 #newsLater{
   text-align: center;
 padding-top: 40px;
+color: #ddd;
 }
 #pack{ 
 text-align: center;
@@ -516,12 +534,17 @@ text-align: center;
   font-size: large;
  padding-left: 20px;
 }
+#subscribe:hover{
+color: white;
+background-color: black;
+}
 
 #f123{
 display: flex;
 align-items: center;
 justify-content: center;
 color: white;
+cursor: pointer;
 }
 
 
@@ -530,7 +553,7 @@ color: white;
 
 
   
-=======
+
   /* The popup form - hidden by default */
 .enquiry-form-popup {
   display: none;

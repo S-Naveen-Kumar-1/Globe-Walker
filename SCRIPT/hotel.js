@@ -65,7 +65,7 @@ function displayHotelPlaces(data){
      
          let card=document.createElement("div");
              let image=document.createElement("img");
-             let price=document.createElement("h5");
+             let price=document.createElement("h4");
              let location=document.createElement("h3");
              let title=document.createElement("h3");
              let card2=document.createElement("div");
@@ -103,7 +103,7 @@ function displayHotelPlaces(data){
                  moreInfo.innerText="More Info";
                  moreInfo.setAttribute("class","moreInfo");   
                  
-            price.innerText="Price: Rs."+data[i].price+"/Person";
+            price.innerText="₹ "+data[i].price+"/Head";
             price.setAttribute("class","price");
              
              image.src=data[i].image;
