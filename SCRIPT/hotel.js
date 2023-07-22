@@ -124,6 +124,8 @@ function displayHotelPlaces(data){
             
              enquiry.innerText="Send Enquiry";
              enquiry.setAttribute("class","enquiryBtn");
+              
+    
 
              addCartBtn.innerText="Add to cart";
              addCartBtn.setAttribute("class","addCartBtn");
@@ -136,7 +138,8 @@ function displayHotelPlaces(data){
      
  
              enquiry.addEventListener("click",()=>{
-                 enquiry_openForm();
+              moreInfo_openForm();
+                 document.getElementById("hotelname").innerText=data[i].title;
              })
 
              moreInfo.addEventListener("click",()=>{
@@ -149,6 +152,7 @@ function displayHotelPlaces(data){
                  }
      
      }
+// enquiry
 
 
     // More Info popup functions and eventListerners
