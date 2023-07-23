@@ -419,6 +419,13 @@ margin-left: 30px;
     color: black;
   }
 
+/*  */
+  #enquiryBtn{
+    width: 20%;
+    border: transparent;
+    font-size: larger;
+    background-color: var(--primary);
+  }
 
 
 

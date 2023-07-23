@@ -148,8 +148,8 @@ function displayPopularPlaces(data){
      
  
              enquiry.addEventListener("click",()=>{
-                 enquiry_openForm();
-             })
+                enquiry_openForm();
+            })
 
              moreInfo.addEventListener("click",()=>{
                 moreInfo_openForm();
@@ -252,7 +252,6 @@ function displayPopularPlaces(data){
                 
 
 
-    
 // functions for enquiry form
 function enquiry_openForm() {
 
@@ -263,6 +262,8 @@ function enquiry_openForm() {
   function enquiry_closeForm() {
     document.getElementById("my_enquiry-form").style.display = "none";
   }             
+
+
 
 
 
