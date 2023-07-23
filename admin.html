@@ -8,10 +8,24 @@
   <link rel="stylesheet" href="STYLE/style.css" />
   <link rel="stylesheet" href="STYLE/skeleton.css" />
   <link rel="stylesheet" href="STYLE/normailze.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>ADMIN PAGE</title>
 </head>
 <body>
-  <div>
+
+  
+  <div  id="searchBar">
+    <div id="search-book-wrapper">
+
+      <input type="text" id="search-by-input" placeholder="Enter Title here">
+      <button id="search-by-button" style="background-color: #33c3f0 ;color: white;border: none;">Search</button>
+
+    </div>
+    </div>
+
+
+
+  <div class="buttons">
     <button id="newHotelBtn">Add new Hotel</button>
     <button id="updateHotelBtn">Update Hotel Details</button>
   </div>
@@ -44,21 +58,20 @@
       </div>
     </div>
 
-  <div class="container">
+  <!-- <div class="container">
 
       <div class="columns eight main">
         <div class="search-book-wrapper" id="search-book-wrapper">
-
-          <input type="text" id="search-by-input" placeholder="Enter Title here">
-          <button id="search-by-button" style="background-color: #33c3f0 ;color: white;border: none;">Search</button>
-
         </div>
         <div class="data-list-wrapper" id="data-list-wrapper">
-          <!-- append card-list that includes card here -->
+       
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
+
+
+  <div id="container"></div>
 
   <script src="./SCRIPT/admin.js" type="module"></script>
 </body>

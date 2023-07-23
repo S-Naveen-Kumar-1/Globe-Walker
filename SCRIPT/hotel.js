@@ -199,7 +199,7 @@ function displayHotelPlaces(data){
      //filter part for Search input
      search.addEventListener("input",function(){
       let searched=arr.filter(function(e){
-          if(e.location.toUpperCase().includes(search.value.toUpperCase())===true || e.country.toUpperCase().includes(search.value.toUpperCase())===true){
+          if(e.title.toUpperCase().includes(search.value.toUpperCase())===true){
               return e
           } 
       })
