@@ -11,7 +11,7 @@ let mainSection = document.getElementById("data-list-wrapper");
 // book
 let hotelTitleInput = document.getElementById("hotel-title");
 let hotelImageInput = document.getElementById("hotel-image");
-// let hotelCategoryInput = document.getElementById("book-category");
+let hotelRatingInput = document.getElementById("hotel-rating");
 // let bookAuthorInput = document.getElementById("book-author");
 let hotelPriceInput = document.getElementById("hotel-price");
 let hotelCreateBtn = document.getElementById("add-hotel");
@@ -84,7 +84,7 @@ function createCard(item) {
 
   let img = document.createElement("img");
   img.setAttribute('src', item.image)
-  img.setAttribute("alt", "book");
+  img.setAttribute("alt", "hotel");
   imgdiv.append(img);
 
   let cardbody = document.createElement("div")
@@ -94,9 +94,9 @@ function createCard(item) {
   cardtitle.classList.add('card-title')
   cardtitle.innerText = item.title;
 
-  // let cardauthor = document.createElement("p");
-  // cardauthor.classList.add('card-author')
-  // cardauthor.innerText = item.author;
+  let cardauthor = document.createElement("p");
+  cardauthor.classList.add('card-author')
+  cardauthor.innerText = item.rating;
 
   // let cardcategory = document.createElement("p");
   // cardcategory.classList.add('card-category')
@@ -144,7 +144,7 @@ function createCard(item) {
       })
   })
 
-  cardbody.append(cardtitle, price, link, btn);
+  cardbody.append(cardtitle, price,cardauthor, link, btn);
   card.append(imgdiv, cardbody);
   return card
 }
@@ -158,7 +158,7 @@ hotelCreateBtn.addEventListener("click", function () {
     method: "POST",
     body: JSON.stringify({
       title: hotelTitleInput.value,
-      // author: bookAuthorInput.value,
+      rating: hotelRatingInput.value,
       // category: bookCategoryInput.value,
       image: hotelImageInput.value,
       price: hotelPriceInput.value
