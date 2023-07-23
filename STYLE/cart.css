@@ -419,12 +419,17 @@ margin-left: 30px;
     color: black;
   }
 
-/*  */
+/* add to payment butn it will get you grand total*/
   #enquiryBtn{
     width: 20%;
+    border-radius: 10px;
     border: transparent;
     font-size: larger;
     background-color: var(--primary);
+  }
+  #enquiryBtn:hover{
+    cursor: pointer;
+    color: white;
   }
 
 

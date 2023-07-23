@@ -149,8 +149,7 @@
                             <p>
                                 <input type="text" class="form-control" name="username" placeholder="@ybl" required="">
                                 <br>
-                                <button type="button" class="btn" style="background-color: #86B817;"> <i
-                                        class="fab"></i> Pay with UPI </button>
+                                <button type="button" class="btn" style="background-color: #86B817; font-weight: bold;" id="btn2">  Pay with UPI </button>
                             </p>
                             <p><strong>Note:</strong> PLEASE ENTER DETAILS CAREFULLY</p>
                         </div>
@@ -193,8 +192,8 @@
                                 <dd><input type="text" class="form-control" name="username" placeholder=""
                                         required=""></dd>
                             </dl>
-                            <button class="subscribe btn btn-block" type="button" id="card-confirm-btn"
-                            style="background-color: #86B817;"> Confirm </button>
+                            <button class="subscribe btn btn-block" type="button" id="btn1"
+                            style="background-color: #86B817; font-weight: bold;"> Confirm </button>
                             <p><strong>Note:</strong> PLEASE ENTER DETAILS CAREFULLY </p>
                         </div> <!-- tab-pane.// -->
                     </div> <!-- tab-content .// -->
@@ -212,6 +211,17 @@
 
 </html>
 <script >
+    let gt = localStorage.getItem("GT");
+    let btn3 = document.getElementById("card-confirm-btn");
+    $("#card-confirm-btn").css("font-weight", "bold");
+    btn3.innerText= btn3.innerText+` To Pay ${gt}`;
+
+    let btn2 = document.getElementById("btn2");
+    btn2.innerText= btn2.innerText+` ${gt}`;
+
+    let btn1 = document.getElementById("btn1");
+    btn1.innerText= btn1.innerText+` To Pay ${gt}`;
+
     function cancle()
     {
         window.location.href="./cart.html";
