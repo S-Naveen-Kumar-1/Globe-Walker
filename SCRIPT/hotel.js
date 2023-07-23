@@ -208,11 +208,13 @@ function displayHotelPlaces(data){
 
    //filter part for rating
   byRating.addEventListener("change",function(){
-
+  
       let rate=arr.filter(function(e){
+        
          if(e.rating==byRating.value){
           return e;
          }
+         
       })
 
       displayHotelPlaces(rate);
