@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="STYLE/style.css" />
+  <link rel="stylesheet" href="STYLE/skeleton.css" />
+  <link rel="stylesheet" href="STYLE/normailze.css" />
+  <title>ADMIN PAGE</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <h1> ADMIN MANAGER</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="columns four sidebar-one" id="sidebar-one">
+
+        <h4>Update Hotel</h4>
+        <input type="text" id="hotel-title" class="u-full-width" placeholder="Title" />
+        <input type="text" id="hotel-image" class="u-full-width" placeholder="Image Url" />
+        <input type="text" id="hotel-price" class="u-full-width" placeholder="Price" />
+        <input type="text" id="hotel-rating" class="u-full-width" placeholder="Rating" />
+        <button id="add-hotel" class="u-full-width button button-primary">
+          Add Hotel
+        </button>
+        <hr />
+
+        <h4>update Hotel Details</h4>
+        <input type="text" id="hotel-id" class="u-full-width" placeholder="Hotel ID" />
+        <input type="text" id="update-hotel-title" class="u-full-width" placeholder="Title" />
+        <input type="text" id="update-hotel-image" class="u-full-width" placeholder="Image Url" />
+        <input type="text" id="update-hotel-price" class="u-full-width" placeholder="Price" />
+        <input type="text" id="update-hotel-rating" class="u-full-width" placeholder="Rating" />
+        <button id="update-hotel" class="u-full-width button button-primary">
+          Update Hotel Details
+        </button>
+        <hr />
+       
+      </div>
+
+      <div class="columns eight main">
+        <div class="search-book-wrapper" id="search-book-wrapper">
+       
+          <input type="text"  id="search-by-input" placeholder="Enter Title here" >
+          <button id="search-by-button" style="background-color: #33c3f0 ;color: white;border: none;">Search</button>
+
+        </div>
+        <div class="data-list-wrapper" id="data-list-wrapper">
+          <!-- append card-list that includes card here -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./SCRIPT/admin.js" type="module"></script>
+</body>
+
+</html>
