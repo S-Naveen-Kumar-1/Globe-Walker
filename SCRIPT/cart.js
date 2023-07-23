@@ -41,7 +41,7 @@ let status = JSON.parse(localStorage.getItem("status"));
 
 if (status) {
 
-  login_signup.innerText = "log-out";
+   login_signup.innerText = "log-out";
   displayHotelPlaces(hotelArr)
   function displayHotelPlaces(data) {
     container.innerHTML = null;
