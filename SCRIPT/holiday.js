@@ -43,6 +43,7 @@ insta.addEventListener("click",()=>{
 youTube.addEventListener("click",()=>{
     window.open("https://www.youtube.com/");
 });
+let hotelArr= JSON.parse(localStorage.getItem("cartData"))||[];
 
 
 let arr = [ {
@@ -93,6 +94,23 @@ function displayPopularPlaces(data){
              let days=document.createElement("p");
              let enquiry=document.createElement("button");
              let addCartBtn=document.createElement("button");
+
+             addCartBtn.addEventListener("click",function(){
+                let flag=true;
+                for(let j=0;j<hotelArr.length;j++){
+                    if(hotelArr[j].id==data[i].id){
+                      flag = false
+                         alert("Package Already in Cart Page, Please Go to Cart Page")
+                    }
+                }
+                if(flag){
+                  data[i].quantity=1;
+                  hotelArr.push(data[i])
+                  localStorage.setItem("cartData",JSON.stringify(hotelArr))
+                  alert ("Package added to Cart")
+                }
+            })
+
              let country=document.createElement("h3");
                  country.innerText=data[i].country;
 
