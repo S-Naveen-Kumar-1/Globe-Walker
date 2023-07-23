@@ -1,5 +1,7 @@
 @charset "utf-8";
-
+body{
+  margin: 0px;;
+}
 .Top_bar {
   width: 100%;
 
@@ -154,18 +156,19 @@
 }
 
 #navOptions>:nth-child(6) {
-  color: #a1e117;
+  color: white;
   text-decoration: underline;
   text-decoration-thickness: 3px;
-  width: 10%;
+  /* width: 10%; */
   height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 30px;
-  margin-top: -10px;
+  margin-top: -12px;
   text-decoration: none;
-  /* background-color: #86B817; */
+  background-color: #86B817;
+  padding: 1%;
 }
 
 #navOptions>:nth-child(6)>img {
@@ -212,7 +215,9 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: 'Nunito', sans-serif; 
+
   font-size: 12px;
   line-height: 1em;
 }
@@ -359,7 +364,8 @@ input::placeholder {
           align-items: center;
   width: 100%;
   height: 100vh;
-  background: #dcdef2;
+  /* background: #dcdef2; */
+  background: white;
   background-size: cover;
 }
 .user_options-container {
@@ -374,7 +380,8 @@ input::placeholder {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  background-color: rgba(34, 34, 34, 0.85);
+  /* background-color: rgba(34, 34, 34, 0.85); */
+  background-color: black;
   border-radius: 3px;
 }
 
@@ -452,7 +459,8 @@ input::placeholder {
   font-weight: 500;
   line-height: 1em;
   text-transform: uppercase;
-  color: #e8716d;
+  /* color: #e8716d; */
+  color: var(--primary);
   letter-spacing: 0.1rem;
 }
 .user_options-forms .forms_field:not(:last-of-type) {
@@ -497,7 +505,8 @@ input::placeholder {
   color: #b3b3b3;
 }
 .user_options-forms .forms_buttons-action {
-  background-color: #e8716d;
+  /* background-color: #e8716d; */
+  background-color: var(--primary);
   border-radius: 3px;
   padding: 10px 35px;
   font-size: 1rem;
@@ -510,7 +519,9 @@ input::placeholder {
   transition: background-color 0.2s ease-in-out;
 }
 .user_options-forms .forms_buttons-action:hover {
-  background-color: #e14641;
+  /* background-color: #e14641; */
+  background-color: #a1e117;
+  /* color: #14141F; */
 }
 .user_options-forms .user_forms-signup,
 .user_options-forms .user_forms-login {
