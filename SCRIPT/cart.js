@@ -71,6 +71,8 @@ container.innerHTML=null
                     paymentArr.push(data[i])
                     localStorage.setItem("paymentData",JSON.stringify(paymentArr))
                     alert ("Package added to Payment Page")
+                    window.location.href="./payment.html"
+
                   
               })
 
