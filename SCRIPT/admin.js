@@ -3,21 +3,22 @@
 const bookURL = `https://globe-walker-bjxi.onrender.com/hotels`;
 let mainSection = document.getElementById("data-list-wrapper");
 
-// book
+// hotel
 let hotelTitleInput = document.getElementById("hotel-title");
 let hotelImageInput = document.getElementById("hotel-image");
 let hotelRatingInput = document.getElementById("hotel-rating");
 let hotelPriceInput = document.getElementById("hotel-price");
 let hotelCreateBtn = document.getElementById("add-hotel");
 
-// Update book
+// Update hotel
 let updateHotelIdInput = document.getElementById("hotel-id");
 let updateHotelTitleInput = document.getElementById("update-hotel-title");
 let updateHotelImageInput = document.getElementById("update-hotel-image");
 let updateHotelPriceInput = document.getElementById("update-hotel-price");
 let updateHotelBtn = document.getElementById("update-hotel");
 
-
+let searchByInput = document.getElementById("search-by-input");
+let searchByButton = document.getElementById("search-by-button");
 
 //Hotels Data
 let booksData = [];
@@ -168,7 +169,10 @@ function updatebook() {
     })
 }
 
-
+searchByButton.addEventListener("click",function(){
+  console.log("hi")
+  fetchdata(`${bookURL}?_like=${searchByInput.value}`)
+})
 // searchByButton.addEventListener("click",function(){
 //   console.log("hi")
 //   fetchdata(`${bookURL}?${searchByInput.value}`)

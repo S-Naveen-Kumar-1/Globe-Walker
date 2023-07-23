@@ -83,9 +83,7 @@ container.innerHTML=null
             //      card5.setAttribute("class","middleDiv");
             //      card5.append(price);  
                    
-             let moreInfo = document.createElement("h5");
-                 moreInfo.innerText="More Info";
-                 moreInfo.setAttribute("class","moreInfo");   
+            
                  
             // tripStartDate.innerText="Trip Start Date: "+data[i].startDate;
             // tripStartDate.setAttribute("class","tripStartDate");
@@ -123,7 +121,7 @@ container.innerHTML=null
              card4.append(enquiry,addCartBtn);
              card2.id="rating";
             //  card3.id="day_rating";
-             card.append(image,card2,location,price,moreInfo,card4);
+             card.append(image,card2,location,price,card4);
              container.append(card);
      
  
@@ -138,13 +136,6 @@ container.innerHTML=null
                     })
 
 
-             moreInfo.addEventListener("click",()=>{
-                moreInfo_openForm();
-                // moreInfo_Sliding_Image.src=data[i].moreImage[0];
-                LcoationDescription.innerText=data[i].desciption;
-                ArrowFunc(data[i].moreImage,0)
-                 
-            })
                  }
      
      }
