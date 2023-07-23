@@ -503,16 +503,80 @@ body {
 }
 
 /* mountain */
-#mountain {
-    margin-top: 5%;
+.Testimonal{
+    text-align: center;
+    margin: auto;
+}
+.Testimonal>img{
+    width: 25%;
+}
+.afterMountain{
+    text-align: center;
+    margin: auto;
+}
+.afterMountain>img{
+    width: 100px;
+    height: 100px;
+}
+
+.fun{
+display: grid;
+grid-template-columns: repeat(3,25%);
+justify-content: center;
+gap: 30px;
+}
+.fun >div{
+    margin-top: 3%;
+    width: 100%;
+    height: 300px;
+    background-color: #86B817;
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.fun>div>div{
+    display: flex;
+    border: none;
+    border-radius: 60px;
+    width: 90px;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+}
+.fun>div>div>img{
+border-radius: 50px;
+width:80px;
+height: 80px;
 
 }
 
-#mountain>img {
-    width: 100%;
-    display: flex;
+.mountainName{
+margin-top: 10px;
+margin-bottom: 0px;
+color: white;
+}
+.mountainAddress{
+    margin-top: 2px;
+    margin-bottom: 0px;
+    color:rgb(236, 234, 234);
+    }
+
+.mountainDes{
+    color: rgb(236, 234, 234);
+    width: 90%;
+    text-align: center;
     margin: auto;
-    height: 400px;
+    margin-top: 20px;
+}  
+
+#mountain1{
+    display: none;
+}
+#mountain2{
+    display: none;
 }
 
 /* get in touch */
@@ -525,53 +589,13 @@ body {
     margin-bottom: 5%;
 }
 
-#form {
-    width: 90%;
-    margin: auto;
-    display: grid;
-    justify-content: center;
-    /* border: 1px solid black; */
-    text-align: center;
-
-    margin-bottom: 5%;
-
-}
-
-#details {
-    display: flex;
-    width: 90%;
-    gap: 2%;
-}
-
-#name {
-    font-size: 20px;
-    border-radius: 10px;
-
-}
-
-#email {
-    font-size: 20px;
-    border-radius: 10px;
-}
-
-#message {
-    width: 102%;
-    font-size: 20px;
-    border-radius: 10px;
-}
-
-#form-btn>button {
-    width: 25%;
-    margin: 2%;
-    padding: 1%;
-    border-radius: 10px;
-}
-
-#form-btn>button:hover {
-    cursor: pointer;
+/* booking */
+.booking {
+    background: linear-gradient(rgba(15, 23, 43, .7), rgba(15, 23, 43, .7)), url(../IMAGES/booking.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
-    background-color: black;
-
 }
 
 
@@ -583,6 +607,7 @@ body {
    background-color: black;
    justify-content: center;
    justify-content: space-evenly;
+   margin-top: 25px;
  }
 #company_info{
     color: white;
@@ -632,4 +657,80 @@ body {
   #trip>div>img{
     width: 100px;
     height: 100px;
+  }
+
+
+  /* regards dot animation taken from https://codepen.io/nzbin/pen/GGrXbp */
+.dot-stretching {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: #86B817;
+    color: #86B817;
+    transform: scale(1.25, 1.25);
+    animation: dot-stretching 2s infinite ease-in;
+  }
+  .dot-stretching::before, .dot-stretching::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+  }
+  .dot-stretching::before {
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    background-color:black;
+    color: black;
+    animation: dot-stretching-before 2s infinite ease-in;
+  }
+  .dot-stretching::after {
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: black;
+    color: black;
+    animation: dot-stretching-after 2s infinite ease-in;
+  }
+  
+  @keyframes dot-stretching {
+    0% {
+      transform: scale(1.25, 1.25);
+    }
+    50%, 60% {
+      transform: scale(0.8, 0.8);
+    }
+    100% {
+      transform: scale(1.25, 1.25);
+    }
+  }
+  @keyframes dot-stretching-before {
+    0% {
+      transform: translate(0) scale(0.7, 0.7);
+    }
+    50%, 60% {
+      transform: translate(-20px) scale(1, 1);
+    }
+    100% {
+      transform: translate(0) scale(0.7, 0.7);
+    }
+  }
+  @keyframes dot-stretching-after {
+    0% {
+      transform: translate(0) scale(0.7, 0.7);
+    }
+    50%, 60% {
+      transform: translate(20px) scale(1, 1);
+    }
+    100% {
+      transform: translate(0) scale(0.7, 0.7);
+    }
+  }
+  
+  .col-3{
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      margin-top: 30px;
   }
