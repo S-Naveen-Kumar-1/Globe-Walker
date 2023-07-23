@@ -247,7 +247,22 @@ function displayPopularPlaces(data){
 
             displayPopularPlaces(high);
                     
-                }})       
+                }})   
+                
+                
+
+
+    
+// functions for enquiry form
+function enquiry_openForm() {
+
+    document.getElementById("my_enquiry-form").style.display = "block";
+  
+  }
+  
+  function enquiry_closeForm() {
+    document.getElementById("my_enquiry-form").style.display = "none";
+  }             
 
 
 

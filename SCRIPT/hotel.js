@@ -46,7 +46,7 @@ let MoreInfoCloseBtn = document.querySelector(".close");
 // let arr = [];
 async function getdata(){
     try{
-        let res = await fetch("./DATA/hotel.json");
+        let res = await fetch("https://globe-walker-bjxi.onrender.com/hotels");
         let data = await res.json();
           displayHotelPlaces(data)
           fil(data);
@@ -138,8 +138,6 @@ function displayHotelPlaces(data){
      
  
              enquiry.addEventListener("click",()=>{
-
-              console.log("hi");
                  enquiry_openForm();
              })
 
