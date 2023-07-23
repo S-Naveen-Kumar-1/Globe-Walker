@@ -1,4 +1,12 @@
 /* reusable */
+/* * {
+  box-sizing: border-box;
+   font-family: 'Nunito', sans-serif; 
+} */
+
+.checked {
+  color: orange;
+}
 
 .capsule {
     height: 26px;
@@ -50,9 +58,10 @@
   
   /* card list */
   .card-list {
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* flex-wrap: wrap; */
+    /* flex-basis: 100%; */
     gap: 4%;
   }
   
@@ -74,16 +83,8 @@
   
   /* individual card  */
   .card {
-    background-color: white;
-    font-size: 20px;
-    padding: 15px;
-  
-    border: 1px solid #e1e1e1;
-    border-radius: 4px;
-  
-    display: flex;
-    flex-direction: column;
-    gap: 4%;
+    width: fit-content;
+    border: 1px solid black;
   }
   
   .card__item:not(:last-child) {
@@ -157,12 +158,217 @@
 
   #newHotel{
 display: none;
+position: relative;
+top: 10%;
+left: 34%;
   }
   #updateHotel1{
 display: none;
+position: relative;
+top: 10%;
+left: 34%;
   }
 
+  .buttons{
+    display: flex;
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
   
+  }
+  #newHotelBtn{
+    background-color: #86B817;
+    color: white;
+    width: 50%;
+  }
+  #newHotelBtn:hover{
+    color: black;
+  }
+  #updateHotelBtn{
+    background-color: #86B817;
+    color: white;
+    margin-left: 20px;
+    width: 50%;
+  }
+  #updateHotelBtn:hover{
+    color: black;
+  }
+
+  #searchBar{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: fit-content;
+    margin-top: 20px;
+  }
+
+  #search-by-input{
+    width: 700px;
+    height: 50px;
+    border-radius: 30px;
+  }
+  #search-by-button{
+    margin-left: -135px;
+    width: 130px;
+    height: 40px;
+    border-radius: 30px;
+  }
+  #search-by-input:hover{
+    border-color: greenyellow;
+  }
+
+
+
+
+  /* for conatiner div and cards */
+
+  #container{
+    margin: auto;
+    margin-top: 20px;
+    display: grid;
+  grid-template-columns: repeat(4,23%);
+  row-gap: 20px;
+  justify-content: space-evenly;
+  text-align: center;
+  
+}
+
+#container>div{
+    /* border: 1px solid black; */
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    cursor: pointer; 
+    position: relative;
+    transition: transform 0.3s ease;
+  transform: translateY(0px);   
+}
+#container>div:hover{
+  transform: translateY(-15px)
+}
+
+#container>div>img{
+    width: 100%;
+    height: 250px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px; 
+   
+}
+#container>div>h3{
+  color: var(--primary);
+}
+#container>div>h4{
+  color: var(--dark);
+  margin-bottom: 5%;
+}
+
+  #rating{
+    /* display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px; */
+   /* margin-left: 0px;
+   border: 4px solid black; */
+   display: flex;
+   font-size: larger;
+   justify-content: center;
+   gap: 10px;
+    
+}
+
+#container .enquiry_ToCartDiv{
+    display: flex;
+    justify-content:center;
+    /* align-items: center; */
+    height: fit-content;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+#container .location{
+
+    color: #eb2009;
+    width:fit-content;
+    margin: auto;
+    margin-top: -10px;
+    border: 4px solid red;
+    /* margin-bottom: 10px; */
+}
+
+#container .enquiry_ToCartDiv > .enquiryBtn{
+    border: transparent;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    color:rgb(16, 2, 16);
+    font-weight: bold;
+    background-color: var(--primary);
+    cursor: pointer;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    /* margin-left: 35px; */
+}
+
+#container .enquiry_ToCartDiv > .addCartBtn{
+    border: transparent;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    color: rgb(16, 1, 16);
+    font-weight: bold;
+    background-color: var(--primary);
+    cursor: pointer;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    /* margin-left: 35px; */
+ }
+
+ #container .enquiry_ToCartDiv > .enquiryBtn:hover{
+    
+    color: white;
+}
+
+#container .enquiry_ToCartDiv > .addCartBtn:hover{
+    
+    color: white;
+}
+
+#container>div>div:nth-child(4)>h1:hover{
+    color: red;
+}
+
+.price{
+    margin: 0px;
+    margin-top: 5px;
+    padding: 0px;
+}
+
+.card-link{
+  background-color: gray;
+  color: white;
+}
+
+:root {
+  --primary: #86B817;
+  --secondary: #FE8800;
+  --light: #F5F5F5;
+  --dark: #14141F;
+}
+
+.oldrating{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+ 
   
   
   
