@@ -84,7 +84,7 @@ function displayPopularPlaces(data){
              let image=document.createElement("img");
              let tripStartDate=document.createElement("h5");
              let seats_Available=document.createElement("h5");
-             let price=document.createElement("h5");
+             let price=document.createElement("h4");
              let location=document.createElement("h3");
              let card2=document.createElement("div");
              let card3=document.createElement("div");
@@ -113,7 +113,7 @@ function displayPopularPlaces(data){
             seats_Available.innerText="Seats Available: "+data[i].seatsAvailable;
             seats_Available.setAttribute("class","seats_Available");
            
-            price.innerText="Price: Rs."+data[i].price+"/Person";
+            price.innerText="₹ "+data[i].price+"/Head";
             price.setAttribute("class","price");
              
              image.src=data[i].image;
