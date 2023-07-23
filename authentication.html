@@ -8,7 +8,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/CustomEase.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
   <link rel="stylesheet" href="/STYLE/authentication.css">
-  <title>Authentication</title>
+  <title>Login/Signup</title>
 <!-- Google Web Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +22,8 @@
         <div>
             <img src="https://www.jing.fm/clipimg/full/24-247863_clipart-info-location-icon-png-white.png"
                 alt="Location">
-            <span>xyz Street, Bangalore, India</span>
+            <!-- <span>xyz Street, Bangalore, India</span> -->
+            <span>Globe Walker, Bangalore, India</span>
         </div>
 
         <div>
@@ -32,7 +33,7 @@
 
         <div>
             <img src="https://logodix.com/logo/510999.png" alt="mail">
-            <span>info@demoexample.com</span>
+            <span>info@globewalker.com</span>
         </div>
 
     </div>
@@ -95,15 +96,15 @@
           <form class="forms_form">
             <fieldset class="forms_fieldset">
               <div class="forms_field">
-                <input type="email" placeholder="Email" class="forms_field-input" required autofocus />
+                <input type="email" id="login_email" placeholder="Email" class="forms_field-input" required autofocus />
               </div>
               <div class="forms_field">
-                <input type="password" placeholder="Password" class="forms_field-input" required />
+                <input type="password" id="login_password" placeholder="Password" class="forms_field-input" required />
               </div>
             </fieldset>
             <div class="forms_buttons">
               <button type="button" class="forms_buttons-forgot">Forgot password?</button>
-              <input type="submit" value="Log In" class="forms_buttons-action">
+              <input type="submit" value="Log In" class="forms_buttons-action" id="login_btn">
             </div>
           </form>
         </div>
@@ -112,17 +113,17 @@
           <form class="forms_form">
             <fieldset class="forms_fieldset">
               <div class="forms_field">
-                <input type="text" placeholder="Full Name" class="forms_field-input" required />
+                <input type="text" placeholder="Full Name" id="fullName" class="forms_field-input" required />
               </div>
               <div class="forms_field">
-                <input type="email" placeholder="Email" class="forms_field-input" required />
+                <input type="email" placeholder="Email" id="signup_email" class="forms_field-input" required />
               </div>
               <div class="forms_field">
-                <input type="password" placeholder="Password" class="forms_field-input" required />
+                <input type="password" placeholder="Password" id="signup_password" class="forms_field-input" required />
               </div>
             </fieldset>
             <div class="forms_buttons">
-              <input type="submit" value="Sign up" class="forms_buttons-action">
+              <input type="submit" value="Sign up" class="forms_buttons-action" id="signup_btn">
             </div>
           </form>
         </div>
