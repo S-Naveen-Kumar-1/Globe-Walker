@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
 }
 :root {
   --primary: #86B817;
@@ -324,9 +325,9 @@ transform: translateY(-3px);
     margin-top: 10px;
   }
 
-  #datefilter{
-    /* margin-left: 1200px; */
-  }
+  /* #datefilter{
+     margin-left: 1200px; 
+  } */
 
 #tripDate{
     margin-top: 5px;
@@ -356,7 +357,7 @@ transform: translateY(-3px);
     margin-top: 20px;
     display: grid;
   grid-template-columns: repeat(4,23%);
-  row-gap: 17px;
+  row-gap: 20px;
   justify-content: space-evenly;
   text-align: center;
 }
@@ -369,15 +370,28 @@ transform: translateY(-3px);
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    cursor: pointer;   
+    cursor: pointer; 
+    position: relative;
+    transition: transform 0.3s ease;
+  transform: translateY(0px);   
 }
-
+#container>div:hover{
+  transform: translateY(-15px)
+}
 #container>div>img{
     width: 100%;
     height: 250px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;    
 }
+#container>div>h3{
+  color: var(--primary);
+}
+#container>div>h4{
+  color: var(--dark);
+  margin-bottom: 5%;
+}
+
 
 #day_rating{
     display: flex;
@@ -407,7 +421,7 @@ transform: translateY(-3px);
 }
 
 #container .location{
-    background-color: lawngreen;
+    /* background-color: lawngreen; */
     width:fit-content;
     margin: auto;
     margin-top: -10px;
@@ -415,13 +429,13 @@ transform: translateY(-3px);
 }
 
 #container .enquiry_ToCartDiv > .enquiryBtn{
-    border: 1px solid orange;
+    border:  transparent;;
     width: 100px;
     height: 30px;
     border-radius: 10px;
-    color:darkmagenta;
+    color: rgb(16, 2, 16);
     font-weight: bold;
-    background-color: #FFA41C;
+    background-color: var(--primary);
     cursor: pointer;
     margin-bottom: 0px;
     margin-top: 10px;
@@ -429,13 +443,13 @@ transform: translateY(-3px);
 }
 
 #container .enquiry_ToCartDiv > .addCartBtn{
-    border: 1px solid orange;
+    border:transparent;
     width: 100px;
     height: 30px;
     border-radius: 10px;
-    color: darkmagenta;
+    color: rgb(16, 1, 16);
     font-weight: bold;
-    background-color: #FFD814;
+    background-color: var(--primary);
     cursor: pointer;
     margin-bottom: 0px;
     margin-top: 10px;
@@ -443,12 +457,12 @@ transform: translateY(-3px);
  }
 
  #container .enquiry_ToCartDiv > .enquiryBtn:hover{
-    background-color: green;
+    /* background-color: green; */
     color: white;
 }
 
 #container .enquiry_ToCartDiv > .addCartBtn:hover{
-    background-color: green;
+    /* background-color: green; */
     color: white;
 }
 
@@ -589,142 +603,60 @@ transform: translateY(-3px);
 
 
   /* Footer part */
-  #footer{
-    background-color: #3EA8FF;
-    margin-top:50px;
+  
+#company_info{
+  color: white;
 }
-#footer hr{
-  width: 95%;
+#company_info>img{
+  width: 20%;
 }
-#footer img{
-    width: 35px;
-    margin-left: 10px;
-}
-#newsLater{
-    text-align: center;
-padding-top: 40px;
-}
-#pack{ 
- text-align: center;
-}
-#pack>button{
-    margin-left: 30px;
-    width: 170px;
-    height: 50px;
-    border-radius: 20px;
-    background-color: #FFFFFF;
-    color: #3EA8FF;
-    font-weight: bold;
-    font-size: large;
-    border: none;
-
-}
-#pack>input{
-    width: 400px;
-    height: 50px;
-    border-radius: 20px;
-    background-color: #FFFFFF;
-    color: #3EA8FF;
-    font-weight: bold;
-    font-size: large;
-   padding-left: 20px;
-}
-
-#f123{
-display: flex;
-align-items: center;
-justify-content: center;
-color: white;
-}
-
-
-
-/* The popup form - hidden by default */
-.enquiry-form-popup {
-  display: none;
-  position: fixed;
-  bottom: 10%;
-  right: 25%;
-  border: 1px solid black;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-/* Add styles to the form container */
-.enquiry-form-container {
-  max-width: 300px;
-  padding: 10px;
-  background-color: lightskyblue;
-}
-
-/* Full-width input fields */
-.enquiry-form-container input[type=text]{
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
-}
-
-/* When the inputs get focus, do something */
-.enquiry-form-container input[type=text]:focus{
-  background-color: #ddd;
-  outline: none;
-}
-
-#innerDivForm{
+#footer{
   display: flex;
-  background-color: #F2F2F2;
+  background-color: black;
+  margin-top:50px;
+  justify-content: center;
+  justify-content: space-evenly;
 }
-#innerDivForm>div:nth-child(1){
-  width: 400px;
-  text-align: justify;
-  color: #494F5D;
-  margin-right: 35px;
+#contact_footer>h2{
+  color: white;
 }
-#innerDivForm>div:nth-child(1)>h1{
-  margin-left: 25px;
+#num{
+  display: flex;
+  color: white;
+  /* border: 2px solid red; */
 }
-#innerDivForm>div:nth-child(1)>img{
-  width: 40px;
-  margin-left: 15px;
-  margin-top: 20px;
+#contact_footer>div>img{
+  width: 15%;
 }
-#innerDivForm>div:nth-child(1)>#first{
- margin-left: 122px;
+#location{
+  color: white;
+  display: flex;
+  /* border: 2px solid red; */
+  margin-top: 2%;
 }
-#innerDivForm>div:nth-child(1)>hr{
-    width: 90%;
+#time{
+  color: white;
+  display: flex;
+  gap: 10px;
+  /* border: 2px solid red; */
+  margin-top: 4%;
 }
-#innerDivForm>div:nth-child(1)>h3{
-  text-align: center;
+#time>img{
+  
+  height: 50px;
+  /* border: 2px solid red; */
 }
-#innerDivForm>div:nth-child(1)>h2{
-  color: orange;
-  text-align: center;
-}
+#trip{
 
-/* enquiry 2nd div */
-#innerDivForm>div:nth-child(2){
- background-color: lightskyblue;
- width: 300px;
+  color: white;
 }
-#name,#country,#email,#desc,#travDate,#persons,#contact{
-  width: 260px;
-  height: 30px;
-  margin-bottom: 15px;
-  background-color: #F1F1F1;
-  border: 0px;
-  border-radius: 5px;
+#trip>div{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  /* border: 1px solid rgb(239, 10, 10); */
+  gap: 10px;
 }
-#enquiry-submitBtn{
- background-color: greenyellow;
- width: 100px;
- height: 30px;
- color:black;
-}
-#enquiry-closeBtn{
-  background-color: red;
- width: 100px;
- height: 30px;
- color:black;
+#trip>div>img{
+  width: 100px;
+  height: 100px;
 }
