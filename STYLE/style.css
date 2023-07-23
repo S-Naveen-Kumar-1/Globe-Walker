@@ -152,6 +152,17 @@
   .card-body > p {
     margin-bottom: 5px;
   }
+
+  /* admin new hotel div */
+
+  #newHotel{
+display: none;
+  }
+  #updateHotel1{
+display: none;
+  }
+
+  
   
   
   
