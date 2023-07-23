@@ -1,10 +1,5 @@
 
-// --- do not touch  ↓↓↓↓↓↓↓↓↓↓↓↓ ----------
-// const baseServerURL = `http://localhost:${import.meta.env.REACT_APP_JSON_SERVER_PORT
-//   }`;
-// --- do not touch  ↑↑↑↑↑↑↑↑↑↑↑↑ ----------
 
-// ***** Constants / Variables ***** //
 const bookURL = `https://globe-walker-bjxi.onrender.com/hotels`;
 let mainSection = document.getElementById("data-list-wrapper");
 
@@ -12,7 +7,6 @@ let mainSection = document.getElementById("data-list-wrapper");
 let hotelTitleInput = document.getElementById("hotel-title");
 let hotelImageInput = document.getElementById("hotel-image");
 let hotelRatingInput = document.getElementById("hotel-rating");
-// let bookAuthorInput = document.getElementById("book-author");
 let hotelPriceInput = document.getElementById("hotel-price");
 let hotelCreateBtn = document.getElementById("add-hotel");
 
@@ -20,30 +14,12 @@ let hotelCreateBtn = document.getElementById("add-hotel");
 let updateHotelIdInput = document.getElementById("hotel-id");
 let updateHotelTitleInput = document.getElementById("update-hotel-title");
 let updateHotelImageInput = document.getElementById("update-hotel-image");
-// let updateBookAuthorInput = document.getElementById("update-book-author");
-// let updateBookCategoryInput = document.getElementById("update-book-category");
 let updateHotelPriceInput = document.getElementById("update-hotel-price");
 let updateHotelBtn = document.getElementById("update-hotel");
 
-//Update price
-// let updatePriceBookId = document.getElementById("update-price-book-id");
-// let updatePriceBookPrice = document.getElementById("update-price-book-price");
-// let updatePriceBookPriceButton = document.getElementById("update-price-book");
 
-//sort and filter
-// let sortAtoZBtn = document.getElementById("sort-low-to-high");
-// let sortZtoABtn = document.getElementById("sort-high-to-low");
-// let filterClassic = document.getElementById("filter-Classic");
-// let filterFantasy = document.getElementById("filter-Fantasy");
-// let filterMystery = document.getElementById("filter-Mystery");
 
-//Search by title/author
-
-// let searchBySelect = document.getElementById("search-by-select");
-// let searchByInput = document.getElementById("search-by-input");
-// let searchByButton = document.getElementById("search-by-button");
-
-//Books Data
+//Hotels Data
 let booksData = [];
 let container = document.getElementById("data-list-wrapper");
 
@@ -98,9 +74,7 @@ function createCard(item) {
   cardauthor.classList.add('card-author')
   cardauthor.innerText = item.rating;
 
-  // let cardcategory = document.createElement("p");
-  // cardcategory.classList.add('card-category')
-  // cardcategory.innerText = item.category;
+
 
   let price = document.createElement("p");
   price.classList.add('card-price')
@@ -115,13 +89,11 @@ function createCard(item) {
     a.preventDefault();
     console.log("hi")
     updateHotelIdInput.value = item.id;
-    // updateHotelAuthorInput.value = item.author;
-    // updateBookCategoryInput.value = item.category;
+ 
     updateHotelImageInput.value = item.image;
     updateHotelPriceInput.value = item.price
     updateHotelTitleInput.value = item.title
-    // updatePriceBookId.value=item.id;
-    // updatePriceBookPrice.value=item.price
+   
 
   })
 
@@ -139,7 +111,6 @@ function createCard(item) {
       .then((data) => {
         console.log(data)
         fetchdata(bookURL)
-        // .catch(err=>{console.log(err)})
 
       })
   })
@@ -152,17 +123,17 @@ function createCard(item) {
 
 hotelCreateBtn.addEventListener("click", function () {
   console.log("hi")
-  // let newBook = 
+  let newHotel = 
+      {
+        title: hotelTitleInput.value,
+      rating: hotelRatingInput.value,
+      image: hotelImageInput.value,
+      price: hotelPriceInput.value
+    }
 
   fetch(bookURL, {
     method: "POST",
-    body: JSON.stringify({
-      title: hotelTitleInput.value,
-      rating: hotelRatingInput.value,
-      // category: bookCategoryInput.value,
-      image: hotelImageInput.value,
-      price: hotelPriceInput.value
-    }),
+    body: JSON.stringify({newHotel}),
     headers: {
       "Content-type": "application/json"
     }
@@ -171,7 +142,6 @@ hotelCreateBtn.addEventListener("click", function () {
     .then((data) => {
       console.log(data)
       fetchdata(bookURL)
-      // .catch(err=>{console.log(err)})
 
     })
 })
@@ -181,8 +151,6 @@ updateHotelBtn.addEventListener("click", updatebook);
 function updatebook() {
   let updateBook = {
     title: updateHotelTitleInput.value,
-    // author: updateHotelAuthorInput.value,
-    // category: updateBookCategoryInput.value,
     image: updateHotelImageInput.value,
     price: updateHotelPriceInput.value
   }
@@ -200,43 +168,31 @@ function updatebook() {
     })
 }
 
-// updatePriceBookPriceButton.addEventListener("click", updateBookprice);
 
-// function updateBookprice() {
-//   let updateprice = {
-//     price: updatePriceBookPrice.value
-//   }
-//   fetch(`${baseServerURL}/books/${updateBookIdInput.value}`, {
-//     method: "PATCH",
-//     headers: {
-//       "Content-type": "application/json"
-//     },
-//     body: JSON.stringify(updateprice)
-//   })
-//     .then(res => res.json())
-//     .then(data => {
-//       console.log(data)
-//       fetchdata(bookURL)
-//     })
-// }
-
-
-// sortAtoZBtn.addEventListener("click",function(){
-//   fetchdata(`${bookURL}?_sort=price&_order=asc`)
-// })
-// sortZtoABtn.addEventListener("click",function(){
-//   fetchdata(`${bookURL}?_sort=price&_order=desc`)
-// })
-// filterClassic.addEventListener("click",function(){
-//   fetchdata(`${bookURL}?category=Classic`)
-// })
-// filterFantasy.addEventListener("click",function(){
-//   fetchdata(`${bookURL}?category=Fantasy`)
-// })
-// filterMystery.addEventListener("click",function(){
-//   fetchdata(`${bookURL}?category=Mystery`)
-// })
 // searchByButton.addEventListener("click",function(){
 //   console.log("hi")
-//   fetchdata(`${bookURL}?${searchBySelect.value}_like=${searchByInput.value}`)
+//   fetchdata(`${bookURL}?${searchByInput.value}`)
 // })
+
+// newhotel div
+
+let newHotelbtn = document.getElementById("newHotelBtn");
+let updateHotelbtn = document.getElementById("updateHotelBtn");
+let newHotel = document.getElementById("newHotel");
+let updateHotel = document.getElementById("updateHotel1");
+
+newHotelbtn.addEventListener("click",function(){
+  newHotel.style.display="block"
+  updateHotel.style.display="none"
+})
+updateHotelbtn.addEventListener("click",function(){
+  newHotel.style.display="none"
+  updateHotel.style.display="block"
+
+})
+
+
+
+
+
+
