@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
-    /* font-weight: 600 !important; */
-    font-family: 'Nunito', sans-serif;
+    /* font-weight: 600 !important;  */
+     font-family: 'Nunito', sans-serif; 
 
 
 }
@@ -578,58 +578,58 @@ body {
 
 
  /* Footer part */
- #footer{
-    background-color: #9ccbf1;
-    margin-top:50px;
-
-
-
-
-#footer hr {
-    width: 95%;
-}
-
-#footer img {
-    width: 35px;
-    margin-left: 10px;
-}
-
-#newsLater {
-    text-align: center;
-    padding-top: 40px;
-}
-
-#pack {
-    text-align: center;
-}
-
-#pack>button {
-    margin-left: 30px;
-    width: 170px;
-    height: 50px;
-    border-radius: 20px;
-    background-color: #FFFFFF;
-    color: #3EA8FF;
-    font-weight: bold;
-    font-size: large;
-    border: none;
-
-}
-
-#pack>input {
-    width: 400px;
-    height: 50px;
-    border-radius: 20px;
-    background-color: #FFFFFF;
-    color: #3EA8FF;
-    font-weight: bold;
-    font-size: large;
-    padding-left: 20px;
-}
-
-#f123 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+ #footer1{
+   display: flex;
+   background-color: black;
+   justify-content: center;
+   justify-content: space-evenly;
+ }
+#company_info{
     color: white;
-}
+  }
+  #company_info>img{
+    width: 20%;
+  }
+  #contact_footer>h2{
+    color: white;
+  }
+  #num{
+    display: flex;
+    color: white;
+    /* border: 2px solid red; */
+  }
+  #contact_footer>div>img{
+    width: 15%;
+  }
+  #location{
+    color: white;
+    display: flex;
+    /* border: 2px solid red; */
+    margin-top: 2%;
+  }
+  #time{
+    color: white;
+    display: flex;
+    gap: 10px;
+    /* border: 2px solid red; */
+    margin-top: 4%;
+  }
+  #time>img{
+    
+    height: 50px;
+    /* border: 2px solid red; */
+  }
+  #trip{
+  
+    color: white;
+  }
+  #trip>div{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* border: 1px solid rgb(239, 10, 10); */
+    gap: 10px;
+  }
+  #trip>div>img{
+    width: 100px;
+    height: 100px;
+  }

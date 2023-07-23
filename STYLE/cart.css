@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
 }
 :root {
   --primary: #86B817;
@@ -24,7 +25,7 @@
   z-index: 99;
 }
 .checked {
-    color: orange;
+    color: yellow;
 }
 body{
   margin: 0%;
@@ -86,7 +87,7 @@ margin-left: 30px;
       }
   /* for Header part which consist Navbar */
   #header{
-    background: linear-gradient(rgba(126, 126, 230, 0.7), rgba(104, 104, 241, 0.7)), url("");
+    background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(../IMAGES/bg-hero.jpg);
     background-size: cover; 
   }
 
@@ -217,7 +218,13 @@ margin-left: 30px;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    cursor: pointer;   
+    cursor: pointer; 
+    position: relative;
+    transition: transform 0.3s ease;
+  transform: translateY(0px);   
+}
+#container>div:hover{
+  transform: translateY(-15px)
 }
 
 #container>div>img{
@@ -226,13 +233,20 @@ margin-left: 30px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;    
 }
+#container>div>h3{
+  color: var(--primary);
+}
+#container>div>h4{
+  color: var(--dark);
+  margin-bottom: 5%;
+}
 
   #rating{
     display: flex;
     text-align: center;
     align-items: center;
+    justify-content: center;
     gap: 10px;
-    margin-right: 20px;
 }
 
 #container .enquiry_ToCartDiv{
@@ -245,21 +259,22 @@ margin-left: 30px;
 }
 
 #container .location{
-    background-color: rgb(113, 140, 86);
+    /* background-color: rgb(113, 140, 86); */
     width:fit-content;
     margin: auto;
     margin-top: -10px;
+    
     /* margin-bottom: 10px; */
 }
 
 #container .enquiry_ToCartDiv > .enquiryBtn{
-    border: 1px solid orange;
+    border: transparent;
     width: 100px;
     height: 30px;
     border-radius: 10px;
-    color:darkmagenta;
+    color:rgb(16, 2, 16);
     font-weight: bold;
-    background-color: #FFA41C;
+    background-color: var(--primary);
     cursor: pointer;
     margin-bottom: 0px;
     margin-top: 10px;
@@ -267,13 +282,13 @@ margin-left: 30px;
 }
 
 #container .enquiry_ToCartDiv > .addCartBtn{
-    border: 1px solid orange;
+    border:  transparent;
     width: 100px;
     height: 30px;
     border-radius: 10px;
-    color: darkmagenta;
+    color: rgb(16, 1, 16);
     font-weight: bold;
-    background-color: #FFD814;
+    background-color:  var(--primary);
     cursor: pointer;
     margin-bottom: 0px;
     margin-top: 10px;
@@ -281,12 +296,12 @@ margin-left: 30px;
  }
 
  #container .enquiry_ToCartDiv > .enquiryBtn:hover{
-    background-color: green;
+    /* background-color: green; */
     color: white;
 }
 
 #container .enquiry_ToCartDiv > .addCartBtn:hover{
-    background-color: green;
+    /* background-color: green; */
     color: white;
 }
 
@@ -407,51 +422,62 @@ margin-left: 30px;
 
 
 
-   /* Footer part */
-   #footer{
-    background-color: #3EA8FF;
-    width: 100%;
+  
+  /* Footer part */
+  
+#company_info{
+  color: white;
 }
-#footer hr{
-  width: 95%;
+#company_info>img{
+  width: 20%;
 }
-#footer img{
-    width: 35px;
-    margin-left: 10px;
+#footer{
+  display: flex;
+  background-color: black;
+  margin-top:50px;
+  justify-content: center;
+  justify-content: space-evenly;
 }
-#newsLater{
-    text-align: center;
-padding-top: 40px;
+#contact_footer>h2{
+  color: white;
 }
-#pack{ 
- text-align: center;
+#num{
+  display: flex;
+  color: white;
+  /* border: 2px solid red; */
 }
-#pack>button{
-    margin-left: 30px;
-    width: 170px;
-    height: 50px;
-    border-radius: 20px;
-    background-color: #FFFFFF;
-    color: #3EA8FF;
-    font-weight: bold;
-    font-size: large;
-    border: none;
+#contact_footer>div>img{
+  width: 15%;
+}
+#location{
+  color: white;
+  display: flex;
+  /* border: 2px solid red; */
+  margin-top: 2%;
+}
+#time{
+  color: white;
+  display: flex;
+  gap: 10px;
+  /* border: 2px solid red; */
+  margin-top: 4%;
+}
+#time>img{
+  
+  height: 50px;
+  /* border: 2px solid red; */
+}
+#trip{
 
+  color: white;
 }
-#pack>input{
-    width: 400px;
-    height: 50px;
-    border-radius: 20px;
-    background-color: #FFFFFF;
-    color: #3EA8FF;
-    font-weight: bold;
-    font-size: large;
-   padding-left: 20px;
+#trip>div{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  /* border: 1px solid rgb(239, 10, 10); */
+  gap: 10px;
 }
-
-#f123{
-display: flex;
-align-items: center;
-justify-content: center;
-color: white;
+#trip>div>img{
+  width: 100px;
+  height: 100px;
 }

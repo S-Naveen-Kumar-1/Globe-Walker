@@ -51,7 +51,7 @@ container.innerHTML=null
              let image=document.createElement("img");
             //  let tripStartDate=document.createElement("h5");
             //  let seats_Available=document.createElement("h5");
-             let price=document.createElement("h5");
+             let price=document.createElement("h4");
              let location=document.createElement("h3");
              let card2=document.createElement("div");
             //  let card3=document.createElement("div");
@@ -91,11 +91,11 @@ container.innerHTML=null
             // seats_Available.innerText="Seats Available: "+data[i].seatsAvailable;
             // seats_Available.setAttribute("class","seats_Available");
            
-            price.innerText="Price: Rs."+data[i].price+"/Person";
+            price.innerText="₹ "+data[i].price+"/Head";
             price.setAttribute("class","price");
              
              image.src=data[i].image;
-             location.innerText=data[i].location+", "+data[i].country;
+             location.innerText=data[i].title;
              location.setAttribute("class","location");
              rating.innerText=data[i].rating;
             //  days.innerText=data[i].day;
@@ -113,7 +113,7 @@ container.innerHTML=null
              enquiry.innerText="DELETE";
              enquiry.setAttribute("class","enquiryBtn");
 
-             addCartBtn.innerText="Buy Now";
+             addCartBtn.innerText="BUY NOW";
              addCartBtn.setAttribute("class","addCartBtn");
 
              card2.append(rating,stars);
