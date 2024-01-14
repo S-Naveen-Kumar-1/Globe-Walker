@@ -10,9 +10,9 @@ Embark on a journey of a lifetime with Globe Walker - your go-to travel website 
 ## Tech Stacks Used
 
 <p align = "center">
-![Screenshot (1436)](https://github.com/S-Naveen-Kumar-1/boorish-earthquake-4077/assets/130354961/e6ab5ab3-eb6c-4874-b7a0-18923aa33223)
-![Screenshot (1437)](https://github.com/S-Naveen-Kumar-1/boorish-earthquake-4077/assets/130354961/f4c37930-d175-4711-8a42-91eb3f095cca)
-![Screenshot (1435)](https://github.com/S-Naveen-Kumar-1/boorish-earthquake-4077/assets/130354961/e139c905-0f46-432c-9e0a-770c9a316b4a)
+<img src="https://github.com/audacity07/screeching-wax-837/blob/master/images/HTML5_logo_and_wordmark.svg.png?raw=true" alt="html" width="60" height="55"/>
+<img src="https://github.com/audacity07/screeching-wax-837/blob/master/images/CSS3_logo_and_wordmark.svg.png?raw=true" alt="CSS" width="45" height="55"/>
+<img src="https://github.com/audacity07/screeching-wax-837/blob/master/images/1200px-Javascript-shield.svg.png?raw=true" alt="js" width="45" height="55"/>
 </p>
 <hr>
 
@@ -24,7 +24,7 @@ Embark on a journey of a lifetime with Globe Walker - your go-to travel website 
 - Sort Functionality
 - Features Carousel
 - Dynamic Add and Remove Functionality
-- Dynamic addition of Cards, Rating and Total Calculation
+- Dynamic addition of Cards and Total Calculation
 - Login and Sign up functionality
 - Checkout
 - Delete  functionality
@@ -41,8 +41,14 @@ https://github.com/S-Naveen-Kumar-1/boorish-earthquake-4077
 | `Project Highlights` |
 | :------------------: |
 
- <div align = "center">
+<div align = "center">
 
+ <img src="https://github.com/S-Naveen-Kumar-1/boorish-earthquake-4077/assets/130354961/da4e678d-8494-431f-9f73-514147bfb9b1" width="946" height="384" />
+ <img src="https://github.com/S-Naveen-Kumar-1/boorish-earthquake-4077/assets/130354961/9750fdcb-373c-4216-9317-6b032b83a40a" width="942" height="446"/>
+ <img src="https://github.com/S-Naveen-Kumar-1/boorish-earthquake-4077/assets/130354961/1a17c2df-fad4-4465-8b58-38bf170aeb65" width="942" height="478"/>
+ 
+  
+<div/>
 
 
 | `Demo` |
