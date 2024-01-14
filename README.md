@@ -10,11 +10,9 @@ Embark on a journey of a lifetime with Globe Walker - your go-to travel website 
 ## Tech Stacks Used
 
 <p align = "center">
-  ![Screenshot (1436)](https://github.com/S-Naveen-Kumar-1/boorish-earthquake-4077/assets/130354961/ff0a2b12-ee4f-4b48-bfcc-d4c3e6505630)
-
-  ![Screenshot (1437)](https://github.com/S-Naveen-Kumar-1/boorish-earthquake-4077/assets/130354961/025b050e-22db-4416-b5c9-2c85fe3016ee)
-![Screenshot (1435)](https://github.com/S-Naveen-Kumar-1/boorish-earthquake-4077/assets/130354961/46637deb-ca09-459b-99ce-d5bd45fe0477)
-
+![Screenshot (1436)](https://github.com/S-Naveen-Kumar-1/boorish-earthquake-4077/assets/130354961/e6ab5ab3-eb6c-4874-b7a0-18923aa33223)
+![Screenshot (1437)](https://github.com/S-Naveen-Kumar-1/boorish-earthquake-4077/assets/130354961/f4c37930-d175-4711-8a42-91eb3f095cca)
+![Screenshot (1435)](https://github.com/S-Naveen-Kumar-1/boorish-earthquake-4077/assets/130354961/e139c905-0f46-432c-9e0a-770c9a316b4a)
 </p>
 <hr>
 
